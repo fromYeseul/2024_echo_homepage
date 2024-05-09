@@ -1,0 +1,887 @@
+<?php
+include '/jshc/www/gohttps.html'
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135661226-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-135661226-1');
+	</script>
+	<!-- saved from url=(0013)about:internet -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>:: 에코아이티 ::</title>
+	<!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"/>
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="robots" content="all"/>
+	<meta name="author" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="' target="_blank">https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+	<!--custom_css-->
+	<link rel="stylesheet" type="text/css" href="css/owlCarousel.css"/>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/subPage.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style2024.css"/>
+	<!--base_css-->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/animate.min.css">
+	<script  src="js/jquery-latest.min.js"></script>
+	<!--aos-->
+	<link href="css/aos.css" rel="stylesheet">
+	<script src="js/aos.js"></script>
+	<script src="js/mail_ver04.js" charset='utf-kr'></script>
+	<script type="text/javascript">   
+		$(document).ready( function() {
+			//$(".sub_header").load("common/sub_menu2024.html"); 
+			$(".sub_footer").load("common/footer.html");		
+		});
+	</script>
+</head>
+<body data-aos-easing="ease" data-aos-duration="700" data-aos-delay="0" class="style2024">
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$.ajax({
+			type: "POST",
+			url: "/common/mail.html",
+			dataType : 'html',
+			cache: false,
+			success : function(html){
+				$('#mail_box').html(html);
+				
+				$('#mail_box').html($("#mail_box div.layerbody").html());
+				$("#mail_box div.mailInfo").hide();
+				tag_con("메인");
+			}
+		});
+	});
+	</script> 
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$.ajax({
+			type: "POST",
+			url: "/common/mail.html",
+			dataType : 'html',
+			cache: false,
+			success : function(html){
+				$('#mailPop_box').append(html);
+			}
+		});
+	});
+	</script> 
+	<!--skip_Navi-->
+	<div id="skipNavi">
+		<ul>
+			<li><a href="#topnav">주메뉴바로가기</a></li>
+			<li><a href="#sub_contents">본문바로가기</a></li>
+		</ul>
+	</div>
+	<!--// skip_Navi-->
+
+	<div id="sub_wrapper" class="page-main">
+		<!-- sub_header //-->
+		<div class="sub_header nav-menu" data-aos="fade-down" data-aos-delay="0">
+			<header>
+				<h1 class="wh_logo">
+					<a href="../index2024.html"><img src="../images/sub_logo_basic.png" alt="에코아이티"/></a>
+				</h1>
+				<h1 class="basic_logo">
+					<a href="../index2024.html"><img src="../images/sub_logo_basic.png" alt="에코아이티"/></a>
+				</h1>
+				<nav>
+					<h2 class="skip">주메뉴</h2>
+					<ul  id="topnav" class="gnb_menu">
+						<li class="depth first">
+							<a href="../sap/sap2024.html" class="">Business</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>Business</dt>
+												<dd></dd>
+											</dl>
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="../sap/sap2024.html">SAP</a></li>
+											<li><a href="../rpa/rpa2024.html">AI/RPA</a></li>
+											<li><a href="../mendix/mendix2024.html">Mendix</a></li>
+											<li><a href="../salesforce/salesforce2024.html">Salesforce</a></li>
+											<li><a href="../ito/ito2024.html">ITO(SI/SM)</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="depth">
+							<a href="../esg/esg2024.html">Notice</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>Notice</dt>
+												<dd></dd>
+											</dl>
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="../esg/esg.html">ESG경영</a></li>
+											<!--li><a href="https://page.stibee.com/subscriptions/45645" target="_blank">뉴스레터</a></li-->
+											<li><a href="../work/work.html">Customer</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="depth">
+							<a href="../recruit/recruit2024.html">Recruit</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>Recruit</dt>
+												<dd>에코아이티와 함께 성장하고 새로운 꿈을 펼칠 열정적인 인재를 기다립니다.</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="../recruit/recruit2024.html">인재상</a></li>
+											<li><a href="../recruit/recruit2024.html">복리후생</a></li>
+											<li><a href="../recruit/recruit2024.html">채용방법</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="depth">
+							<a href="../company/company2024.html">Company</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>Company</dt>
+												<dd>성공 비즈니스 파트너 에코아이티를 소개합니다.</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="../company/company2024.html">회사개요</a></li>
+											<li><a href="../work/work2024.html">파트너</a></li>
+											<li><a href="../company/location2024.html">Contact Us</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<!--// gnb-->
+				<!-- menu-container : 모바일 //-->
+				<div id="menu-container">
+					<div id="menu-wrapper">
+						<div id="hamburger-menu"><span></span><span></span><span></span></div>
+					<!-- hamburger-menu -->
+					</div>
+					<!-- menu-list -->
+					<ul class="menu-list accordion">
+						<li id="nav1" class="toggle accordion-toggle"> 
+							<span class="icon-plus"></span><a class="menu-link" href="#">Business</a>
+						</li>
+						<!-- accordion-toggle -->
+						<ul class="menu-submenu accordion-content">
+							<li><a class="head" href="../sap/sap.html">SAP</a></li>
+							<li><a class="head" href="../rpa/rpa.html">AI/RPA</a></li>
+							<li><a class="head" href="../mendix/mendix.html">Mendix</a></li>
+							<li><a class="head" href="../salesforce/salesforce.html">Salesforce</a></li>
+							<li><a class="head" href="../ito/ito.html">ITO(SI/SM)</a></li>
+						</ul>
+						<li id="nav2" class="toggle accordion-toggle"> 
+							<a class="menu-link" href="#">Notice</a>
+						</li>
+						<!-- accordion-toggle -->
+						<ul class="menu-submenu accordion-content">
+							<li><a class="head" href="../esg/esg.html">ESG경영</a></li>
+							<!--li><a class="head" href="https://page.stibee.com/subscriptions/45645" target="_blank">뉴스레터</a></li-->
+							<li><a class="head" href="../work/work.html">Customer</a></li>
+						</ul>
+						<li id="nav5" class="toggle accordion-toggle"> 
+							<a class="menu-link" href="#">Recruit</a>
+						</li>
+						<!-- accordion-toggle -->
+						<ul class="menu-submenu accordion-content">
+							<li><a class="head" href="../recruit/talent.html">인재상</a></li>
+							<li><a class="head" href="../recruit/benefits.html">복리후생</a></li>
+							<li><a class="head" href="../recruit/method.html">채용방법</a></li>
+						</ul>
+						<li id="nav6" class="toggle accordion-toggle"> 
+							<a class="menu-link" href="#">Company</a>
+						</li>
+						<!-- accordion-toggle -->
+						<ul class="menu-submenu accordion-content">
+							<li><a class="head" href="../company/company.html">회사개요</a></li>
+							<li><a class="head" href="../company/history.html">연혁</a></li>
+							<li><a class="head" href="../company/partner.html">파트너</a></li>
+							<li><a class="head" href="../company/location.html">오시는 길</a></li>
+						</ul>
+						<!-- accordion-toggle -->
+						<ul class="menu-submenu accordion-content"><li></li></ul>
+						<!-- menu-submenu accordon-content-->
+					</ul>
+					<!-- // menu-list-->
+				</div>
+				<!--// menu-container -->
+				<!-- Menu_icon -->
+				<div id="menu-icon-shape" class="hamberger">
+					<div id="menu-icon">
+						<div id="top"></div>
+						<div id="middle"></div>
+						<div id="bottom"></div>
+					</div>	
+				</div>
+				<!-- Overlay menu //-->
+				<div id="overlay-nav">
+					<div id="nav-content">
+						<!--siteMapWrap-->
+						<div class="siteMapWrap">
+							<!--sitemap_header-->
+							<div class="sitemap_header">
+								<h3>SITEMAP</h3>
+							</div>
+							<!--// sitemap_header-->
+							<!--sitemap_list-->
+							<div class="sitemap_list">
+								<ul class="sitemapList_wrap">
+									<li class="listDepth first">
+										<p>Business</p>
+										<ul>
+											<li><a href="../sap/sap.html">SAP</a></li>
+											<li><a href="../rpa/rpa.html">AI/RPA</a></li>
+											<li><a href="../mendix/mendix.html">Mendix</a></li>
+											<li><a href="../salesforce/salesforce.html">Salesforce</a></li>
+											<li><a href="../ito/ito.html">ITO(SI/SM)</a></li>
+										</ul>
+									</li>
+									<li class="listDepth">
+										<p>Notice</p>
+										<ul>
+											<li><a href="../esg/esg.html">ESG경영</a></li>
+											<!--li><a href="https://page.stibee.com/subscriptions/45645" target="_blank">뉴스레터</a></!li-->
+											<li><a href="../work/work.html">Customer</a></li>
+										</ul>
+									</li>
+									<li class="listDepth">
+										<p>Recruit</p>
+										<ul>
+											<li><a href="../recruit/talent.html">인재상</a></li>
+											<li><a href="../recruit/benefits.html">복리후생</a></li>
+											<li><a href="../recruit/method.html">채용방법</a></li>
+										</ul>
+									</li>
+									<li class="listDepth last">
+										<p>Company</p>
+										<ul>
+											<li><a href="../company/company.html">회사소개</a></li>
+											<li><a href="../company/history.html">연혁</a></li>
+											<li><a href="../company/partner.html">파트너</a></li>
+											<li><a href="../company/location.html">Contact Us</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<!--// sitemap_list-->
+			
+						</div>
+						<!--// siteMapWrap-->
+					</div>
+					<!--// nav-content-->
+				</div>
+				<!--// overlay-nav -->
+			</header>
+			<div class="submenuDim"></div>
+		</div>
+		<div class="menuDim"></div>
+		<!--// sub_header-->
+
+		<div  class="sub_visual_area">
+			<div id="mainVisual">
+				<ul class="main-slide">
+					<li class="slide-item main-slide_01">
+						<div class="contauner">
+							<div class="visual_txt">
+								<p class="tit"><strong class="txt-gradation txt-shadow" data-text="Together with Value">Together with Value</strong></p>
+								<p class="txt">
+									에코아이티는 최신 ICT 기술과 전문가를 보유한 <strong>Total IT 서비스 기업</strong>입니다.<br>
+									<strong>미래를 향한 DX 기술</strong>로 고객의 비즈니스 가치를 실현시키며 함께 성장합니다.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="slide-item main-slide_02">
+						<div class="contauner">
+							<div class="visual_txt">
+								<p class="tit"><strong class="txt-gradation txt-shadow" data-text="All technologies for Smart DX">All technologies for Smart DX</strong></p>
+								<p class="txt">
+									<strong>SAP, AI/RPA, Low-Code, CRM & ITO</strong><br>
+									빠르게 변하는 AI시대에 기술 및 트렌드에 신속하게 대응하여 기업의 디지털 혁신을 지원합니다. 
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="slide-item main-slide_03">
+						<div class="contauner">
+							<div class="visual_txt">
+								<p class="tit"><strong class="txt-gradation txt-shadow" data-text="Skill + People + Trust = ECHOIT">Skill + People + Trust = ECHOIT</strong></p>
+								<p class="txt">
+									<strong>관계</strong>를 중시하고 <strong>경험</strong>을 존중하며 고객이 더 만족할 수 있는 <strong>방향</strong>을 제시합니다.
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="zoom-list-area">
+				<ul class="list">
+					<li class="item item-sap active">
+						<a href="/sap/sap2024.html" class="link-block">
+							<div class="tit-area"><p class="tit">SAP ERP</p></div>
+							<div class="btn-area">								
+								<i class="icon icon-plus-new icon-white border border-white"><span class="sr-only">바로가기</span></i>								
+							</div>
+						</a>
+					</li>
+					<li class="item item-salesforce">
+						<a href="/salesforce/salesforce2024.html" class="link-block">
+							<div class="tit-area"><p class="tit img"><img src="../images/2024/main/main_toptext02.png" alt="salesforce"></p></div>
+							<div class="btn-area">								
+								<i class="icon icon-plus-new icon-white border border-white"><span class="sr-only">바로가기</span></i>								
+							</div>
+						</a>
+					</li>
+					<li class="item item-rpa">
+						<a href="/rpa/rpa2024.html" class="link-block">
+							<div class="tit-area"><p class="tit">Brity RPA</p></div>
+							<div class="btn-area">								
+								<i class="icon icon-plus-new icon-white border border-white"><span class="sr-only">바로가기</span></i>								
+							</div>
+						</a>
+					</li>
+					<li class="item item-mendix">
+						<a href="/mendix/mendix2024.html" class="link-block">
+							<div class="tit-area"><p class="tit img"><img src="../images/2024/main/main_toptext04.png" alt="mendix"></p></div>
+							<div class="btn-area">								
+								<i class="icon icon-plus-new icon-white border border-white"><span class="sr-only">바로가기</span></i>								
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="scroll" style="display: none">
+				<a href="javascript:scrollDown()">SCROLL</a>
+			</div>
+		</div>
+
+
+
+
+		<div id="sub_contents">
+			<div class="contents">
+				<div class="contents_title">
+					<p class="tit">
+						Core Values
+					</p>
+					<p class="txt">
+						<strong>‘기회는 놓치지 않고, 실력은 결과로 증명한다’</strong> 는 것이 에코아이티의 의지입니다.<br>
+						에코아이티는 투지와 추진력, 반드시 해내고야 만다는 자신감으로 고객의 만족을 극대화시키며 에코아이티의 가치를 더욱 높여나갈 것입니다.
+					</p>
+				</div>
+				<div class="contents_con">
+					<div class="conts-box-area">
+						<div class="conts-box">							
+							<div class="box-list-area pos-R type-core">
+								<div class="exp-img-area">
+									<img src="images/2024/main/main_value.png" alt="">
+								</div>
+								<ul class="list type-size2 type-round type-bgcolor type-bgcolor-grey type-padding pad-small pad-small-y">
+									<li class="item pos-R">
+										<div class="box type-text">
+											<ul class="bullet-list">
+												<li class="b-tit mb30 decimal">
+													<span class="num color-1">C</span>
+													<div class="txt color-1 has-sub">
+														<p>고객만족</p>
+														<p class="sub">Customer satisfaction</p>
+													</div>
+												</li>
+												<li class="b-txt type-normal txt-small">
+													<strong>
+														고객의 만족과 성공이  곧 에코아이티의 성공<br class="only-pc">입니다.
+														고객의 입장에서 생각하여 더 좋은<br class="only-pc">
+														방법을 고민하고 제안하며, 신뢰와 책임을 바탕<br class="only-pc">으로
+														실패 없는 프로젝트를 달성합니다.
+													</strong>
+												</li>												
+											</ul>											
+										</div>
+										<div class="sticker-area pos-A top right">
+											<p class="sticker round"><strong>핵심가치01</strong></p>
+										</div>
+									</li>
+									<li class="item pos-R">
+										<div class="box type-text">
+											<ul class="bullet-list">
+												<li class="b-tit mb30 decimal">
+													<span class="num color-1">H</span>
+													<div class="txt color-1 has-sub">
+														<p>인재중심</p>
+														<p class="sub">Human Resources-oriented</p>
+													</div>
+												</li>
+												<li class="b-txt type-normal txt-small">
+													<strong>
+														에코아이티의 성장 원천은 우수한 인재들입니다.<br>
+														인재를 확보하고 육성하여 기술력과 경쟁력<br class="only-pc">을
+														갖춘 전문가로 함께 성장합니다.
+													</strong>
+												</li>												
+											</ul>											
+										</div>
+										<div class="sticker-area pos-A top right">
+											<p class="sticker round"><strong>핵심가치02</strong></p>
+										</div>
+									</li>
+									<li class="item pos-R">
+										<div class="box type-text">
+											<ul class="bullet-list">
+												<li class="b-tit mb30 decimal">
+													<span class="num color-1">A</span>
+													<div class="txt color-1 has-sub">
+														<p>도전과 추진력</p>
+														<p class="sub">Challenge & Action</p>
+													</div>
+												</li>
+												<li class="b-txt type-normal txt-small">
+													<strong>
+														에코아이티는 열린 기업문화를 지향합니다.<br>
+														자유로운 소통과 창의적인 사고, 능동적인 자세<br class="only-pc">로
+														끊임없이 도전하고 변화하며 미래 성장동력<br class="only-pc">을
+														만들어 가고 있습니다.
+													</strong>
+												</li>												
+											</ul>											
+										</div>
+										<div class="sticker-area pos-A top right">
+											<p class="sticker round"><strong>핵심가치03</strong></p>
+										</div>
+									</li>
+									<li class="item pos-R">
+										<div class="box type-text">
+											<ul class="bullet-list">
+												<li class="b-tit mb30 decimal">
+													<span class="num color-1">E</span>
+													<div class="txt color-1 has-sub">
+														<p>실력과 역량</p>
+														<p class="sub">Expertise & Know-how</p>
+													</div>
+												</li>
+												<li class="b-txt type-normal txt-small">
+													<strong>
+														축적된 경험과 노하우, 영역별 최고수준의 전문<br class="only-pc">가들과의
+														협업 및 글로벌 파트너쉽을 기반으로<br class="only-pc">
+														내실 있는 IT 서비스 체계를 구축하여 미래 시장<br class="only-pc">을
+														주도해 나갑니다.
+													</strong>
+												</li>												
+											</ul>											
+										</div>
+										<div class="sticker-area pos-A top right">
+											<p class="sticker round"><strong>핵심가치04</strong></p>
+										</div>
+									</li>
+								</ul>								
+							</div> <!--// .box-list-area  -->
+						</div> <!--// .conts-box -->
+					</div> <!--// .conts-box-area -->
+				</div> <!--// .contents_con -->
+			</div> <!--// .contents -->
+
+			<div class="contents">
+				<div class="contents_title">
+					<p class="tit">
+						Customers
+					</p>
+					<p class="txt">						
+						에코아이티는 대기업, 스타트업, 공공기관 등 다양한 분야의 고객사에<br class="only-pc">
+						구축 및 운영 프로젝트를 성공적으로 수행해 오고 있습니다.
+					</p>
+				</div>
+				<div class="contents_con">
+					<div class="conts-box-area">
+						<div class="conts-box">
+							
+							<div id="portfoliolist">
+								<div class="portfolio sap all" data-cat="sap all">
+									<div class="portfolio-wrapper">
+										<div class="portfolio-img">
+											<img src="images/work/sap_workList_27.png" alt="" />
+										</div>
+										<div class="label">
+											<div class="label-text">
+												<a class="text-title">한화에어로스페이스</a>
+											</div>
+											<div class="label-sub">한화에어로스페이스 차세대 <br> ONE-ERP 구축</div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio sap all" data-cat="sap all">
+									<div class="portfolio-wrapper">
+										<div class="portfolio-img">
+											<img src="images/work/sap_workList_50.png" alt="" />
+										</div>
+										<div class="label">
+											<div class="label-text">
+												<a class="text-title">현대자동차</a>
+											</div>
+											<div class="label-sub">차세대 ERP 구축<br>글로벌 템플릿 구축 2단계</div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio sap all" data-cat="sap all">
+									<div class="portfolio-wrapper">
+										<div class="portfolio-img">
+											<img src="images/work/sap_workList_29.png" alt="" />
+										</div>
+										<div class="label">
+											<div class="label-text">
+												<a class="text-title">LG에너지솔루션</a>
+											</div>
+											<div class="label-sub">㈜엘지에너지솔루션 <br> 차세대 ERP 프로젝트</div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio sap all" data-cat="sap all">
+									<div class="portfolio-wrapper">
+										<div class="portfolio-img">
+											<img src="images/work/sap_workList_30.png" alt="" />
+										</div>
+										<div class="label">
+											<div class="label-text">
+												<a class="text-title">삼성전자</a>
+											</div>
+											<div class="label-sub">온라인 스토어 운영지원</div>
+										</div>
+									</div>
+								</div>								
+								<div class="portfolio rpa all" data-cat="rpa all">
+									<div class="portfolio-wrapper">
+										<div class="portfolio-img">
+											<img src="images/2024/work/rpa_workList_01.png" alt="" />
+										</div>
+										<div class="label">
+											<div class="label-text">
+												<a class="text-title">한국남부발전</a>
+											</div>
+											<div class="label-sub">현장 주도 업무자동화(RPA)</div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio rpa all" data-cat="rpa all">
+									<div class="portfolio-wrapper">
+										<div class="portfolio-img">
+											<img src="images/2024/work/rpa_workList_02.png" alt="" />
+										</div>
+										<div class="label">
+											<div class="label-text">
+												<a class="text-title">한국철도공사</a>
+											</div>
+											<div class="label-sub">RPA 고도화 및 자동화 프로젝트</div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio rpa all" data-cat="rpa all">
+									<div class="portfolio-wrapper">
+										<div class="portfolio-img">
+											<img src="images/work/rpa_workList_28.png" alt="" />
+										</div>
+										<div class="label">
+											<div class="label-text">
+												<a class="text-title">동성케미컬</a>
+											</div>
+											<div class="label-sub">RPA 구축 프로젝트</div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio rpa all" data-cat="rpa all">
+									<div class="portfolio-wrapper">
+										<div class="portfolio-img">
+											<img src="images/work/rpa_workList_31.jpg" alt="" />
+										</div>
+										<div class="label">
+											<div class="label-text">
+												<a class="text-title">한국생산기술연구원</a>
+											</div>
+											<div class="label-sub">RPA 고도화 및 추가 구축</div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio sap all" data-cat="sap all">
+									<div class="portfolio-wrapper">
+										<div class="portfolio-img">
+											<img src="images/2024/work/sap_workList_32.png" alt="" />
+										</div>
+										<div class="label">
+											<div class="label-text">
+												<a class="text-title">SR</a>
+											</div>
+											<div class="label-sub">제4차 통합정보시스템<br>운영 및 유지관리</div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio sap all" data-cat="sap all">
+									<div class="portfolio-wrapper">
+										<div class="portfolio-img">
+											<img src="images/2024/work/sap_workList_33.png" alt="" />
+										</div>
+										<div class="label">
+											<div class="label-text">
+												<a class="text-title">서울반도체</a>
+											</div>
+											<div class="label-sub">서울반도체 ERP시스템 <br>운영 및 유지보수</div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio rpa all" data-cat="rpa all">
+									<div class="portfolio-wrapper">
+										<div class="portfolio-img">
+											<img src="images/2024/work/sap_workList_34.png" alt="" />
+										</div>
+										<div class="label">
+											<div class="label-text">
+												<a class="text-title">한국항공우주산업</a>
+											</div>
+											<div class="label-sub">RPA 플랫폼 구축</div>
+										</div>
+									</div>
+								</div>								
+								<div class="portfolio rpa all" data-cat="rpa all">
+									<div class="portfolio-wrapper">
+										<div class="portfolio-img">
+											<img src="images/2024/work/rpa_workList_27.png" alt="" />
+										</div>
+										<div class="label">
+											<div class="label-text">
+												<a class="text-title">한국마사회</a>
+											</div>
+											<div class="label-sub">업무프로세스자동화(RPA) 구축</div>
+										</div>
+									</div>
+								</div>
+							</div> <!--// #portfoliolist -->
+							
+						</div> <!--// .conts-box -->
+					</div> <!--// .conts-box-area -->
+				</div> <!--// .contents_con -->
+			</div> <!--// .contents -->			
+
+			<div class="contents">
+				<div class="contents_title">
+					<p class="tit">
+						Contact  Us
+					</p>
+					<p class="txt">						
+						아래 담당자 메일로 문의 주시면 빠르게 답변 드리겠습니다.
+					</p>
+				</div>
+				<div class="contents_con">
+					<div class="conts-box-area">
+						<div class="conts-box" id="mail_box">
+						</div> <!--// .conts-box -->
+					</div> <!--// .conts-box-area -->
+				</div> <!--// .contents_con -->
+			</div> <!--// .contents -->
+			
+		</div> <!--// #sub_contents -->
+
+		<!--sub_footer-->
+		<div class="sub_footer">
+		</div>
+		<!--// sub_footer-->
+		<!--bottom_fixed-->
+		<div class="bottom_fixed">
+			<p class="fTab" style="display: none;"><span><span onclick="gtag('event', 'click', {'event_category': '메인하단문의하기'}); tag_con('메인_하단_문의하기');">문의하기</span></span></p>
+			<div class="goTop_wrap">
+				<p class="goTopBtn" id="back-to-top" title="Back to top"><span><i class="fa fa-chevron-up"></i></span></p>
+			</div>
+		</div>
+		<div class="bottom_fixed_dim"></div>
+		<!--// bottom_fixed-->
+	</div><!--// #wrapper -->
+
+	<div id="mailPop_box" style="display: none;"></div>
+
+	<!-- NAVER SCRIPT START -->
+	<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+	<script type="text/javascript">
+	if(!wcs_add) var wcs_add = {};
+	wcs_add["wa"] = "s_76dae02d260";
+	if (!_nasa) var _nasa={};
+	if (window.wcs ) {
+		wcs.inflow("echoit.co.kr");
+		wcs_do(_nasa);
+	}
+	</script>
+	<!-- NAVER SCRIPT END -->
+		
+		
+	<!--owlCarousel-->
+	<script  src="js/jquery213.min.js"></script>
+	<script  src="js/owl.carousel.min.js"></script>
+	<script  src="js/owlCarouselSlider.js"></script>
+	<script  src="js/owlCarouselSlider2.js"></script>
+	<!--Slick-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/slick_base.js"></script>
+	<script  src="js/MobileMenu.js"></script>
+	
+	<script language="javascript" type="text/javascript">
+	AOS.init({
+		throttleDelay: 100,
+		duration: 700,
+		once: true,
+		anchorPlacement: 'top-bottom',
+	});
+	</script>
+	<script src="js/page.js"></script>
+
+	<!--workList_JS-->
+	<script src="js/jquery311.min.js"></script>
+	<script src="js/jquery.mixitup.min.js"></script>
+	<script language="javascript" type="text/javascript">
+		/*workList*/
+		$(function () {
+			var filterList = {
+
+				init: function () {
+
+					// MixItUp plugin
+					// http://mixitup.io
+					$('#portfoliolist').mixItUp({
+						selectors: {
+							target: '.portfolio',
+							filter: '.filter'
+						},
+						load: {
+							filter: '.all' // show app tab on first load
+						}
+					});
+				}
+			};
+			// Run the show!
+			filterList.init();
+		});
+	</script>
+
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.backstretch.min.js"></script>
+	<script>
+	//메인비주얼
+	$(function(){
+		//메인 비주얼 100%
+		$(window).resize(function(){
+			win_h = $(window).height();
+			win_w = $(window).width();
+	
+			if (win_w > 1024){
+				$(".main-slide").height(win_h);
+				$(".main-slide li").height(win_h);
+				$("#mainVisual > .backstretch").height(win_h);
+				$("#mainVisual > .backstretch").width("100%");
+				$('#mainVisual').height(win_h);		
+			} 
+		}).resize();
+
+		$(".main-slide_01").backstretch("images/2024/main/main_background01.jpg", {duration:1000, speed: 200, fade: 500});
+		$(".main-slide_02").backstretch("images/2024/main/main_background02.jpg", {duration:1000, speed: 200, fade: 500});
+		$(".main-slide_03").backstretch("images/2024/main/main_background03.jpg", {duration:1000, speed: 200, fade: 500});	
+	
+		Mainslider = $('.main-slide').bxSlider({
+			auto: true, //자동 롤링
+			mode: 'fade', //효과
+			pause: 4000,  //머무르는 시간
+			pager: true, //블릿사용여부
+			controls: true, //좌우버튼
+			onSlideBefore: function(){
+			$('#mainVisual li').removeClass('active')
+			},
+			onSliderLoad: function(){
+			$('#mainVisual li').addClass('active')
+			},
+			onSlideAfter: function(){
+			Mainslider.startAuto();
+			$('#mainVisual li').addClass('active')
+			}
+		});		
+	})	
+	// 메인 비주얼 스크롤 버튼
+	function scrollDown(){
+		//var headerH = $('#header').height();
+		$('html, body').stop().animate({scrollTop:$(window).height()}, 800)
+		//$('html, body').stop().animate({scrollTop:$(window).height() - headerH}, 1500, 'easeOutExpo')
+	}
+	$(document).ready(function() {
+		var interval = 3000;
+		var autoToggle = setInterval(toggleNext, interval);
+
+		function toggleNext() {
+			var $current = $('.sub_visual_area .zoom-list-area .item.active');
+			var $next = $current.next('.item');
+			if ($next.length) {
+				$current.removeClass('active');
+				$next.addClass('active');
+			} else {                        
+				$('.sub_visual_area .zoom-list-area .item').removeClass('active');
+				$('.sub_visual_area .zoom-list-area .item:first').addClass('active');
+			}
+		}
+
+		// 마우스 오버 시 동작
+		$('.sub_visual_area .zoom-list-area .item').on('mouseover', function() {
+			// 롤링 멈춤
+			clearInterval(autoToggle);
+			
+			// 자신과 형제 요소의 'active' 클래스 삭제
+			$('.sub_visual_area .zoom-list-area .item').removeClass('active');
+		});
+
+		// 아웃 시 동작
+		$('.sub_visual_area .zoom-list-area .item').on('mouseout', function() {
+			// 다시 시작
+			autoToggle = setInterval(toggleNext, interval);
+		});
+	});
+	</script>
+</body>
+</html>

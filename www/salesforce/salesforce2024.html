@@ -1,0 +1,775 @@
+<?php
+include '/jshc/www/gohttps.html'
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135661226-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-135661226-1');
+	</script>
+	<!-- saved from url=(0013)about:internet -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>:: 에코아이티 ::</title>
+	<!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"/>
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="robots" content="all"/>
+	<meta name="author" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="' target="_blank">https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+	<!--custom_css-->
+	<link rel="stylesheet" type="text/css" href="../css/owlCarousel.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/subPage.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/style2024.css"/>
+	<!--base_css-->
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+	<link rel="stylesheet" href="../css/animate.min.css">
+	<script  src="../js/jquery-latest.min.js"></script>
+	<!--aos-->
+	<link href="../css/aos.css" rel="stylesheet">
+	<script src="../js/aos.js"></script>
+	<script src="../js/mail_ver04.js" charset='euc-kr'></script>
+	<script type="text/javascript">   
+		$(document).ready( function() {
+			//$(".sub_header").load("../common/sub_menu2024.html"); 
+			$(".sub_footer").load("../common/footer.html");		
+		});
+	</script>
+</head>
+<body data-aos-easing="ease" data-aos-duration="700" data-aos-delay="0" class="style2024">
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$.ajax({
+			type: "POST",
+			url: "/common/mail.html",
+			dataType : 'html',
+			cache: false,
+			success : function(html){
+				$('#mailPop_box').append(html);
+			}
+		});
+	});
+	</script> 
+	<!--skip_Navi-->
+	<div id="skipNavi">
+		<ul>
+			<li><a href="#topnav">주메뉴바로가기</a></li>
+			<li><a href="#sub_contents">본문바로가기</a></li>
+		</ul>
+	</div>
+	<!--// skip_Navi-->
+
+	<div id="sub_wrapper" class="page-salesforce">
+		<!-- sub_header //-->
+		<div class="sub_header nav-menu" data-aos="fade-down" data-aos-delay="0">
+			<header>
+				<!--h1 class="wh_logo"><a href="../index.html"><img src="../images/sub_logo.png" alt="에코아이티"/></a></h1-->
+				<h1 class="wh_logo"><a href="../index2024.html"><img src="../images/sub_logo_basic.png" alt="에코아이티"/></a></h1>
+				<h1 class="basic_logo"><a href="../index2024.html"><img src="../images/sub_logo_basic.png" alt="에코아이티"/></a></h1>
+				<!--gnb-->
+				<nav>
+					<h2 class="skip">주메뉴</h2>
+					<ul  id="topnav" class="gnb_menu">
+						<li class="depth first">
+							<a href="../sap/sap2024.html" class="">Business</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>Business</dt>
+												<dd></dd>
+											</dl>
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="../sap/sap2024.html">SAP</a></li>
+											<li><a href="../rpa/rpa2024.html">AI/RPA</a></li>
+											<li><a href="../mendix/mendix.html">Mendix</a></li>
+											<li><a href="../salesforce/salesforce.html">Salesforce</a></li>
+											<li><a href="../ito/ito.html">ITO(SI/SM)</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="depth">
+							<a href="../esg/esg.html">Notice</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>Notice</dt>
+												<dd></dd>
+											</dl>
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="../esg/esg.html">ESG경영</a></li>
+											<li><a href="https://page.stibee.com/subscriptions/45645" target="_blank">뉴스레터</a></li>
+											<li><a href="../work/work.html">WORKS</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="depth">
+							<a href="../recruit/talent.html">Recruit</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>Recruit</dt>
+												<dd>에코아이티와 함께 성장하고 새로운 꿈을 펼칠 열정적인 인재를 기다립니다.</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="../recruit/talent.html">인재상</a></li>
+											<li><a href="../recruit/benefits.html">복리후생</a></li>
+											<li><a href="../recruit/method.html">채용방법</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="depth">
+							<a href="../company/company.html">Company</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>Company</dt>
+												<dd>성공 비즈니스 파트너 에코아이티를 소개합니다.</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="../company/company.html">회사개요</a></li>
+											<li><a href="../company/history.html">연혁</a></li>
+											<li><a href="../company/partner.html">파트너</a></li>
+											<li><a href="../company/location.html">Contact Us</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<!--// gnb-->
+				<!-- menu-container : 모바일 //-->
+				<div id="menu-container">
+					<div id="menu-wrapper">
+						<div id="hamburger-menu"><span></span><span></span><span></span></div>
+					<!-- hamburger-menu -->
+					</div>
+					<!-- menu-list -->
+					<ul class="menu-list accordion">
+						<li id="nav1" class="toggle accordion-toggle"> 
+							<span class="icon-plus"></span><a class="menu-link" href="#">Business</a>
+						</li>
+						<!-- accordion-toggle -->
+						<ul class="menu-submenu accordion-content">
+							<li><a class="head" href="../sap/sap2024.html">SAP</a></li>
+							<li><a class="head" href="../rpa/rpa2024.html">AI/RPA</a></li>
+							<li><a class="head" href="../mendix/mendix.html">Mendix</a></li>
+							<li><a class="head" href="../salesforce/salesforce.html">Salesforce</a></li>
+							<li><a class="head" href="../ito/ito.html">ITO(SI/SM)</a></li>
+						</ul>
+						<li id="nav2" class="toggle accordion-toggle"> 
+							<a class="menu-link" href="#">Notice</a>
+						</li>
+						<!-- accordion-toggle -->
+						<ul class="menu-submenu accordion-content">
+							<li><a class="head" href="../esg/esg.html">ESG경영</a></li>
+							<li><a class="head" href="https://page.stibee.com/subscriptions/45645" target="_blank">뉴스레터</a></li>
+							<li><a class="head" href="../work/work.html">WORKS</a></li>
+						</ul>
+						<li id="nav5" class="toggle accordion-toggle"> 
+							<a class="menu-link" href="#">Recruit</a>
+						</li>
+						<!-- accordion-toggle -->
+						<ul class="menu-submenu accordion-content">
+							<li><a class="head" href="../recruit/talent.html">인재상</a></li>
+							<li><a class="head" href="../recruit/benefits.html">복리후생</a></li>
+							<li><a class="head" href="../recruit/method.html">채용방법</a></li>
+						</ul>
+						<li id="nav6" class="toggle accordion-toggle"> 
+							<a class="menu-link" href="#">Company</a>
+						</li>
+						<!-- accordion-toggle -->
+						<ul class="menu-submenu accordion-content">
+							<li><a class="head" href="../company/company.html">회사개요</a></li>
+							<li><a class="head" href="../company/history.html">연혁</a></li>
+							<li><a class="head" href="../company/partner.html">파트너</a></li>
+							<li><a class="head" href="../company/location.html">오시는 길</a></li>
+						</ul>
+						<!-- accordion-toggle -->
+						<ul class="menu-submenu accordion-content"><li></li></ul>
+						<!-- menu-submenu accordon-content-->
+					</ul>
+					<!-- // menu-list-->
+				</div>
+				<!--// menu-container -->
+				<!-- Menu_icon -->
+				<div id="menu-icon-shape" class="hamberger">
+					<div id="menu-icon">
+						<div id="top"></div>
+						<div id="middle"></div>
+						<div id="bottom"></div>
+					</div>	
+				</div>
+				<!-- Overlay menu //-->
+				<div id="overlay-nav">
+					<div id="nav-content">
+						<!--siteMapWrap-->
+						<div class="siteMapWrap">
+							<!--sitemap_header-->
+							<div class="sitemap_header">
+								<h3>SITEMAP</h3>
+							</div>
+							<!--// sitemap_header-->
+							<!--sitemap_list-->
+							<div class="sitemap_list">
+								<ul class="sitemapList_wrap">
+									<li class="listDepth first">
+										<p>Business</p>
+										<ul>
+											<li><a href="../sap/sap.html">SAP</a></li>
+											<li><a href="../rpa/rpa.html">AI/RPA</a></li>
+											<li><a href="../mendix/mendix.html">Mendix</a></li>
+											<li><a href="../salesforce/salesforce.html">Salesforce</a></li>
+											<li><a href="../ito/ito.html">ITO(SI/SM)</a></li>
+										</ul>
+									</li>
+									<li class="listDepth">
+										<p>Notice</p>
+										<ul>
+											<li><a href="../esg/esg.html">ESG경영</a></li>
+											<li><a href="https://page.stibee.com/subscriptions/45645" target="_blank">뉴스레터</a></li>
+											<li><a href="../work/work.html">WORKS</a></li>
+										</ul>
+									</li>
+									<li class="listDepth">
+										<p>Recruit</p>
+										<ul>
+											<li><a href="../recruit/talent.html">인재상</a></li>
+											<li><a href="../recruit/benefits.html">복리후생</a></li>
+											<li><a href="../recruit/method.html">채용방법</a></li>
+										</ul>
+									</li>
+									<li class="listDepth last">
+										<p>Company</p>
+										<ul>
+											<li><a href="../company/company.html">회사소개</a></li>
+											<li><a href="../company/history.html">연혁</a></li>
+											<li><a href="../company/partner.html">파트너</a></li>
+											<li><a href="../company/location.html">Contact Us</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<!--// sitemap_list-->
+			
+						</div>
+						<!--// siteMapWrap-->
+					</div>
+					<!--// nav-content-->
+				</div>
+				<!--// overlay-nav -->
+			</header>
+			<div class="submenuDim"></div>
+		</div>
+		<div class="menuDim"></div>
+		<!--// sub_header-->
+
+		<!-- sub_visual_area //-->
+		<div class="sub_visual_area">
+			<div class="sub_visual sv-salesforce">
+				<div class="sub_topTIlte">
+					<div class="box">
+						<p class="tit img">
+							<img src="../images/2024/salesforce/subtop_salesforce_tit.png" alt="salesforce">
+						</p>
+						<p class="txt fc-white">Global NO1. CRM Platform</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// sub_visual_area-->
+
+		<div id="sub_contents">
+			<div class="contents">
+				<div class="contents_title">
+					<p class="tit">
+						Salesforce는 어느 곳에서나 기업과 고객을 연결합니다. 
+					</p>
+					<p class="txt">
+						Salesforce는 클라우드 기반의 CRM 소프트웨어를 전 세계 15만개 이상 기업에 제공합니다.<br>
+						다양한 Salesforce 기술을 통합한 세계 최초의 실시간 CRM 플랫폼<br class="only-pc">
+						Customer 360은 영업, 마케팅, 커머스, 서비스 및 IT팀을 어디서나 연결합니다.
+					</p>
+				</div>
+				<div class="contents_con">
+					<div class="conts-box-area">
+						<div class="conts-box">
+							<div class="box-cont-area type-col">
+								<div class="cont-visual">
+									<img src="../images/2024/salesforce/salesforce_360img.png" alt="salesforce 서비스 이미지">
+								</div> <!--// .cont-visual -->								
+							</div> <!--// .box-cont-area -->
+						</div> <!--// .conts-box -->
+					</div> <!--// .conts-box-area -->
+				</div> <!--// .contents_con -->
+			</div> <!--// .contents -->
+
+			<div class="contents">
+				<div class="contents_con">
+					<div class="conts-box-area type-round type-bgcolor bgcolor01">
+						<div class="conts-box">
+							<p class="box-tit-area">2개 이상의 Customer 360 응용 프로그램을 사용한 고객 만족도 조사</p>							
+							<div class="box-list-area mt60">
+								<ul class="list type-size3 type-round type-bgcolor type-padding pad-small">
+									<li class="item bgcolor02">
+										<div class="box type-text">
+											<ul class="bullet-list">
+												<li class="b-tit mb50 fc-white decimal">
+													<span class="num bar-bt color-2">72%</span>
+												</li>
+												<li class="b-txt fc-white type-normal">
+													1개 이상의 앱 보고서 사용으로<br class="only-pc">
+													ROI 달성 시간을 단축했다고 응답한<br class="only-pc">
+													고객 비율
+												</li>												
+											</ul>
+										</div>
+									</li>
+									<li class="item bgcolor03">
+										<div class="box type-text">
+											<ul class="bullet-list">
+												<li class="b-tit mb50 fc-white decimal">
+													<span class="num bar-bt color-1">95%</span>
+												</li>
+												<li class="b-txt fc-white type-normal">
+													2개 이상 앱 보고서로<br class="only-pc">
+													전반적인 효율성과 직원 생산성이<br class="only-pc">
+													개선됐다고 응답한 고객 비율
+												</li>												
+											</ul>
+										</div>
+									</li>
+									<li class="item bgcolor01">
+										<div class="box type-text">
+											<ul class="bullet-list">
+												<li class="b-tit mb50 fc-white decimal">
+													<span class="num bar-bt color-3">96%</span>
+												</li>
+												<li class="b-txt fc-white type-normal">
+													ROI 목표를 달성했거나<br class="only-pc">
+													기대 이상의 ROI를 얻었다고<br class="only-pc">
+													응답한 고객 비율
+												</li>												
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div> <!--// .box-list-area -->
+							<div class="txt-add-area ta-center mt60">
+								출처: https://www.salesforce.com/kr/products/
+							</div>
+						</div> <!--// .conts-box -->
+					</div> <!--// .conts-box-area -->
+				</div> <!--// .contents_con -->
+			</div> <!--// .contents -->
+
+			<div class="contents">
+				<div class="contents_title">
+					<p class="tit">
+						Salesforce를 통한 성공 비즈니스
+					</p>
+					<p class="txt">
+						Salesforce는 기업의 규모에 관계없이 비즈니스의 성장에 가장 필요한 <br class="only-pc">
+						최적의 전문 솔루션을 제공합니다. 신뢰할 수 있는 최고의 AI CRM을 통해 생산성을 높입니다.
+					</p>
+				</div>
+				<div class="contents_con">
+					<div class="conts-box-area">
+						<div class="conts-box">
+							<div class="box-list-area">
+								<ul class="list grid-gap-large-x type-size3 type-bdcolor type-round type-padding pad-small">									
+									<li class="item bdcolor02">
+										<div class="box box-t type-bgcolor type-icon type-row d-flex gap20">
+											<div class="icon-img">
+												<img src="../images/2024/salesforce/ico_salesforce02.png" alt="Sales Cloud 아이콘">
+											</div>
+											<div class="icon-text">
+												<p class="txt large fw-larger fw-bolder">Sales Cloud</p>
+											</div>
+										</div>
+										<div class="box box-bt type-text pt50">
+											<ul class="bullet-list type-dot">
+												<li class="b-txt txt-small">AI를 활용해 고객과의 접점을 개인화</li>
+												<li class="b-txt txt-small">수주 또는 실패한 안건을 분석해 영업력 강화</li>
+												<li class="b-txt txt-small">확장 가능한 자동화로 영업 채널 향상</li>
+											</ul>											
+										</div>
+									</li>
+									<li class="item bdcolor04">
+										<div class="box box-t type-bgcolor type-icon type-row d-flex gap20">
+											<div class="icon-img">
+												<img src="../images/2024/salesforce/ico_salesforce04.png" alt="Service Cloud 아이콘">
+											</div>
+											<div class="icon-text">
+												<p class="txt large fw-larger fw-bolder">Service Cloud</p>
+											</div>
+										</div>
+										<div class="box box-bt type-text pt50">
+											<ul class="bullet-list type-dot">
+												<li class="b-txt txt-small">실시간 개인화로 고객 개별 요구에 맞춤형 <br class="only-pc"> 소통</li>
+												<li class="b-txt txt-small">
+													모든 채널을 하나의 플랫폼에 연결해 원활한<br class="only-pc">
+													커뮤니케이션과 비용 절약
+												</li>
+											</ul>											
+										</div>
+									</li>
+									<li class="item bdcolor01">
+										<div class="box box-t type-bgcolor type-icon type-row d-flex gap20">
+											<div class="icon-img">
+												<img src="../images/2024/salesforce/ico_salesforce01.png" alt="Marketing Cloud 아이콘">
+											</div>
+											<div class="icon-text">
+												<p class="txt large fw-larger fw-bolder">Marketing Cloud</p>
+											</div>
+										</div>
+										<div class="box box-bt type-text pt50">
+											<ul class="bullet-list type-dot">
+												<li class="b-txt txt-small">데이터 기반의 캠페인 전략 및 콘텐츠 생성</li>
+												<li class="b-txt txt-small">AI를 활용한 효율적 캠페인 주기 설정</li>
+												<li class="b-txt txt-small">생성형 AI, 예측 AI를 통해 개인화 서비스 제공</li>
+											</ul>											
+										</div>
+									</li>
+									<li class="item bdcolor03">
+										<div class="box box-t type-bgcolor type-icon type-row d-flex gap20">
+											<div class="icon-img">
+												<img src="../images/2024/salesforce/ico_salesforce03.png" alt="Commerce Cloud 아이콘">
+											</div>
+											<div class="icon-text">
+												<p class="txt large fw-larger fw-bolder">Commerce Cloud</p>
+											</div>
+										</div>
+										<div class="box box-bt type-text pt50">
+											<ul class="bullet-list type-dot">
+												<li class="b-txt txt-small">AI 기반 제품추천 기능으로 수익 증대</li>
+												<li class="b-txt txt-small">고객 니즈에 따른 구매 여정, 높은 전환 기대</li>
+												<li class="b-txt txt-small">증강현실, 마켓플레이스 등의 추가 경험 제공</li>
+											</ul>											
+										</div>
+									</li>
+																		
+									<li class="item bdcolor05">
+										<div class="box box-t type-bgcolor type-icon type-row d-flex gap20">
+											<div class="icon-img">
+												<img src="../images/2024/salesforce/ico_salesforce05.png" alt="Tableau 아이콘">
+											</div>
+											<div class="icon-text">
+												<p class="txt large fw-larger fw-bolder">Tableau</p>
+											</div>
+										</div>
+										<div class="box box-bt type-text pt50">
+											<ul class="bullet-list type-dot">
+												<li class="b-txt txt-small">AI + DATA + CRM</li>
+												<li class="b-txt txt-small">모든 데이터 자동 분석</li>
+												<li class="b-txt txt-small">거버넌스를 통해 신뢰할 수 있는 데이터 제공</li>
+											</ul>											
+										</div>
+									</li>
+									<li class="item bdcolor06">
+										<div class="box box-t type-bgcolor type-icon type-row d-flex gap20">
+											<div class="icon-img">
+												<img src="../images/2024/salesforce/ico_salesforce06.png" alt="Mulesoft 아이콘">
+											</div>
+											<div class="icon-text">
+												<p class="txt large fw-larger fw-bolder">Mulesoft</p>
+											</div>
+										</div>
+										<div class="box box-bt type-text pt50">
+											<ul class="bullet-list type-dot">
+												<li class="b-txt txt-small">
+													클라우드, 온프레미스 상관없이 Salesforce를<br class="only-pc">
+													비롯한 모든 시스템을 단일 플랫폼에 연결
+												</li>
+												<li class="b-txt txt-small">
+													이전 프로젝트 기반 우선 순위에 따른<br class="only-pc">
+													프로젝트 구축
+												</li>
+											</ul>											
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div> <!--// .contents_con -->
+			</div> <!--// .contents -->
+
+			<div class="contents">
+				<div class="contents_title">
+					<p class="tit">
+						에코아이티 X Salesforce
+					</p>
+					<p class="txt">
+						에코아이티는 전문성과 기술력을 바탕으로 업계에서 인정 받는 IT 전문 기업으로,<br class="only-pc">
+						전문 컨설턴트 상담부터 최적화된 기술 인력 배치를 통한 고객 맞춤형 솔루션을 제공하여<br class="only-pc">
+						안정적인 Salesforce 도입을 지원합니다.
+					</p>
+				</div>
+				<div class="contents_con">
+					<div class="conts-box-area">
+						<div class="conts-box">							
+							<div class="box-list-area">
+								<ul class="list grid-gap-large-x type-round type-bgcolor-grey type-padding pad-small grid-area grid-4x3">
+									<li class="item type-row">
+										<div class="box type-icon type-circle">
+											<div class="icon-img gradation">
+												<img src="../images/2024/salesforce/icon_salesforce01_consulting.png" alt="Salesforce 컨설팅 아이콘 이미지">
+											</div>
+										</div>
+										<div class="box type-text">
+											<ul class="bullet-list">
+												<li class="b-tit mb25">Salesforce 컨설팅</li>
+												<li class="b-txt">
+													Salesforce 공식 컨설팅 파트너사<br class="only-pc">
+													에코아이티가 성공적인 로드맵을<br class="only-pc">
+													제시
+												</li>												
+											</ul>
+										</div>
+									</li>
+									<li class="item type-row">
+										<div class="box type-icon type-circle">
+											<div class="icon-img gradation">
+												<img src="../images/2024/salesforce/icon_salesforce02_construct.png" alt="아이콘 이미지">
+											</div>
+										</div>
+										<div class="box type-text">
+											<ul class="bullet-list">
+												<li class="b-tit mb25">
+													SAP System<br class="only-pc">
+													연계구축 및 지원
+												</li>
+												<li class="b-txt">Salesforce와 SAP 시스템<br class="only-pc">모두 기술 지원 가능</li>
+												<li class="b-txt type-normal mt30">
+													<p class="type-ast txt-add-area">
+														에코아이티는 Salesforce 파트너, SAP 컨설팅 파트너<br class="only-pc">이자 PCoE 파트너입니다.
+													</p>
+												</li>												
+											</ul>
+										</div>
+									</li>
+									<li class="item type-row">
+										<div class="box type-icon type-circle">
+											<div class="icon-img gradation">
+												<img src="../images/2024/salesforce/icon_salesforce03_expand.png" alt="아이콘 이미지">
+											</div>
+										</div>
+										<div class="box type-text">
+											<ul class="bullet-list">
+												<li class="b-tit mb25">
+													Salesforce 구축 영역<br class="only-pc">
+													확장 지원
+												</li>
+												<li class="b-txt">
+													RPA 연계 등 타 솔루션 연계<br>
+													API 개발, Heroku, Tableau
+												</li>												
+											</ul>
+										</div>
+									</li>
+									<li class="item type-row">
+										<div class="box type-icon type-circle">
+											<div class="icon-img gradation">
+												<img src="../images/2024/salesforce/icon_salesforce04_manage.png" alt="구축/지원 아이콘 이미지">
+											</div>
+										</div>
+										<div class="box type-text">
+											<ul class="bullet-list">
+												<li class="b-tit mb25">구축 및 운영</li>
+												<li class="b-txt">
+													고객의 비즈니스 프로세스 분석을<br class="only-pc">
+													통한 최적화 환경 구축 및 안정화
+												</li>
+												<li class="b-txt">
+													환경 변화에 빠른 대응이 가능하도록<br class="only-pc">
+													운영 지원 및 기술 지원
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="item">
+										<div class="box type-icon">
+											<div class="icon-img">
+												<img src="../images/2024/salesforce/icon_salesforce05_customizing.png" alt="커스터마이징 아이콘 이미지">
+											</div>
+											<div class="icon-text mt30">
+												<p class="txt">Configuration</p>
+											</div>
+										</div>
+										<div class="box type-text mt30">
+											<ul class="bullet-list">
+												<li class="b-txt type-normal txt-center">
+													고객의 요구 사항을 바탕으로<br class="only-pc">
+													Salesforce 기능 구현 및 권한 정의
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="item">
+										<div class="box type-icon">
+											<div class="icon-img">
+												<img src="../images/2024/salesforce/icon_salesforce06_migration.png" alt="마이그레이션 아이콘 이미지">
+											</div>
+											<div class="icon-text mt30">
+												<p class="txt">Data Transformation</p>
+											</div>
+										</div>
+										<div class="box type-text mt30">
+											<ul class="bullet-list">
+												<li class="b-txt type-normal txt-center">
+													Data Migration, 통합 구축 등<br class="only-pc">
+													데이터 관리 및 전환
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="item">
+										<div class="box type-icon">
+											<div class="icon-img">
+												<img src="../images/2024/salesforce/icon_salesforce07_dashboard.png" alt="보안 이슈 아이콘 이미지">
+											</div>
+											<div class="icon-text mt30">
+												<p class="txt">Report 및 Dashboard 구축</p>
+											</div>
+										</div>
+										<div class="box type-text mt30">
+											<ul class="bullet-list">
+												<li class="b-txt type-normal txt-center">
+													필요한 정보를 직관적으로 분석할 수<br class="only-pc">
+													있도록 Report 및 시각화 화면 제공
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div> <!--// .conts-box -->
+					</div> <!--// .conts-box-area -->
+				</div> <!--// .contents_con -->
+			</div> <!--// .contents -->
+			
+		</div> <!--// #sub_contents -->
+
+
+
+
+
+
+		
+
+
+
+		<!--sub_footer-->
+		<div class="sub_footer">
+		</div>
+		<!--// sub_footer-->
+		<!--bottom_fixed-->
+		<div class="bottom_fixed">
+			<p class="fTab"><span><span onclick="gtag('event', 'click', {'event_category': 'Salesforce하단문의하기'}); tag_con('Salesforce_하단_문의하기');">문의하기</span></span></p>
+			<div class="goTop_wrap">
+				<p class="goTopBtn" id="back-to-top" title="Back to top"><span><i class="fa fa-chevron-up"></i></span></p>
+			</div>
+		</div>
+		<div class="bottom_fixed_dim"></div>
+		<!--// bottom_fixed-->
+	</div><!--// #wrapper -->
+
+	<!--mailPop_box-->
+	<div id="mailPop_box" style="display: none;">
+	</div>
+	<!--//mailPop_box-->
+	
+	<!-- NAVER SCRIPT START -->
+	<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+	<script type="text/javascript">
+	if(!wcs_add) var wcs_add = {};
+	wcs_add["wa"] = "s_76dae02d260";
+	if (!_nasa) var _nasa={};
+	if (window.wcs ) {
+		wcs.inflow("echoit.co.kr");
+		wcs_do(_nasa);
+	}
+	</script>
+	<!-- NAVER SCRIPT END -->
+		
+		
+	<!--owlCarousel-->
+	<script  src="../js/jquery213.min.js"></script>
+	<script  src="../js/owl.carousel.min.js"></script>
+	<script  src="../js/owlCarouselSlider.js"></script>
+	<script  src="../js/owlCarouselSlider2.js"></script>
+	<!--Slick-->
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/slick_base.js"></script>
+	<script  src="../js/MobileMenu.js"></script>
+	<script language="javascript" type="text/javascript">
+	AOS.init({
+		throttleDelay: 100,
+		duration: 700,
+		once: true,
+		anchorPlacement: 'top-bottom',
+	});
+	</script>
+	<script>
+		function mailPopopen(){ 
+			$('.inp_check').prop("checked",false);
+			$('select').find('option:first').attr('selected', 'selected');
+			$("#user_part").val("선택하기").prop("selected", true);
+			document.getElementById("user_name").value='';
+			document.getElementById("user_Department").value='';
+			document.getElementById("user_email").value='';
+			document.getElementById("user_phone").value='';
+			document.getElementById("user_area").value='';
+			document.getElementById("mailPop_box").style.display = "block";
+		}
+		function mailPopclose(){
+			document.getElementById("mailPop_box").style.display = "none" ;
+		}
+	</script>
+	<script src="../js/page.js"></script>
+</body>
+</html>

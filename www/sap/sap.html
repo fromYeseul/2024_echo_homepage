@@ -1,0 +1,801 @@
+<?php
+include '/jshc/www/gohttps.html'
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135661226-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-135661226-1');
+		</script>
+		<!-- saved from url=(0013)about:internet -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title>:: 에코아이티 ::</title>
+		<!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no" />
+        <meta name="robots" content="all"/>
+        <meta name="author" content=""/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--[if lt IE 9]>
+		 <script src="' target="_blank">https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		<!--custom_css-->
+        <link rel="stylesheet" type="text/css" href="../css/sap.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<!--base_css-->
+		<link rel="stylesheet" href="../css/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/animate.min.css">
+		<script  src="../js/jquery-latest.min.js"></script>
+		<!--aos-->
+		<link href="../css/aos.css" rel="stylesheet">
+		<script src="../js/aos.js"></script>
+		<script src="../js/mail_ver04.js" charset='euc-kr'></script>
+		<script type="text/javascript">   
+            $(document).ready( function() {
+            
+            $(".sub_footer").load("../common/footer.html");  
+            
+            });
+        </script>
+ 	</head>
+ 	<body data-aos-easing="ease" data-aos-duration="700" data-aos-delay="0">
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$.ajax({
+					type: "POST",
+					url: "/common/mail.html",
+					dataType : 'html',
+					cache: false,
+					success : function(html){
+					$('#mailPop_box').append(html);
+					}
+					});
+			});
+		</script> 
+	<!--skip_Navi-->
+	<div id="skipNavi">
+		<ul>
+			<li><a href="#topnav">주메뉴바로가기</a></li>
+			<li><a href="#contentsArea_01">본문바로가기</a></li>
+		</ul>
+	</div>
+	<!--// skip_Navi-->
+	<!--sap_wrapper-->
+	<div id="sap_wrapper">
+		<!--sub_header-->
+		<div class="sub_header nav-menu" data-aos="fade-down" data-aos-delay="0">
+			<header>
+				<h1 class="wh_logo"><a href="../index.html"><img src="../images/sub_logo.png" alt="에코아이티"/></a></h1>
+				<h1 class="basic_logo"><a href="../index.html"><img src="../images/sub_logo_basic.png" alt="에코아이티"/></a></h1>
+				<!--gnb-->
+				<nav>
+					<h2 class="skip">주메뉴</h2>
+					<ul  id="topnav" class="gnb_menu">
+						<li class="depth first">
+							<a href="../rpa/rpa.html">RPA</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>Robotic Process Automation<dt>
+												<dd>전문 컨설턴트 상담부터 전문 기술인력 개발까지<br>고객에 맞는 RPA 시스템을 제공하고 있습니다<dd>
+											</dl>
+											<!-- 230302 삭제 -ys <button class="BluelineBtn" onclick="location.href='../rpa/rpa.html'">RPA 바로가기</button> -->
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="../rpa/rpa.html">RPA 소개</a></li>
+											<li><a href="../rpa/rpa.html#contentsArea_01-2">RPA 적용가능 업무</a></li>
+											<li><a href="../rpa/rpa.html#contentsArea_02">RPA 적용스토리</a></li>
+											<li><a href="../rpa/rpa.html#contentsArea_05">RPA 적용사례</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="depth">
+							<a href="../sap/sap.html">SAP</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>SAP<dt>
+												<dd>고객이 원하는 모든 유형의  SAP구축 경험을 바탕으로 고객에 맞는 SAP 솔루션을 제공하고 있습니다<dd>
+											</dl>
+											<!-- 230302 삭제 -ys <button class="BluelineBtn" onclick="location.href='../sap/sap.html'">SAP 바로가기</button> -->
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="#contentsArea_01">ERP</a></li>
+											<li><a href="#contentsArea_02">모듈구성</a></li>
+											<li><a href="#contentsArea_03">WHY SAP ERP</a></li>
+											<li><a href="#contentsArea_04">10대 경쟁우위 요소</a></li>
+											<li><a href="#contentsArea_05">도입 기대효과</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="depth">
+							<a href="../work/work.html">Works</a>
+						</li>
+						<li class="depth">
+							<a href="../recruit/talent.html">Recruit</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>Recruit<dt>
+												<dd>에코아이티와 함께 성장하고 새로운 꿈을 펼칠 열정적인 인재를 기다립니다<dd>
+											</dl>
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="../recruit/talent.html">인재상</a></li>
+											<li><a href="../recruit/benefits.html">복리후생</a></li>
+											<li><a href="../recruit/method.html">채용방법</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="depth">
+							<a href="../company/company.html">Company</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>Company<dt>
+												<dd>성공 비즈니스 파트너 에코아이티를 소개합니다<dd>
+											</dl>
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="../company/company.html">회사소개</a></li>
+											<li><a href="../company/history.html">연혁</a></li>
+											<li><a href="../company/partner.html">파트너</a></li>
+											<!-- 220728 ys 수정 <li><a href="../company/notice.html">공지사항</a></li> -->
+											<!-- 230302 수정 -ys <li><a href="../company/location.html">오시는길</a></li> -->
+											<li><a href="../company/location.html">Contact Us</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<!--// gnb-->
+				<!--menu-container : 모바일-->
+				<div id="menu-container">
+				    <div id="menu-wrapper">
+						<div id="hamburger-menu"><span></span><span></span><span></span></div>
+					  	<!-- hamburger-menu -->
+				   </div>
+				   <!-- menu-list -->
+				   <ul class="menu-list accordion">
+					   <li id="nav1" class="toggle accordion-toggle"> 
+							<span class="icon-plus"></span><a class="menu-link" href="#">RPA</a>
+					  	</li>
+					  	<!-- accordion-toggle -->
+					  	<ul class="menu-submenu accordion-content">
+							<li><a class="head" href="../rpa/rpa.html">RPA 소개</a></li>
+							<li><a class="head" href="../rpa/rpa.html#contentsArea_01-2">RPA 적용가능 업무</a></li>
+							<li><a class="head" href="../rpa/rpa.html#contentsArea_02">RPA 적용스토리</a></li>
+						 	<li><a class="head" href="../rpa/rpa.html#contentsArea_05">RPA 적용사례</a></li>
+					   </ul>
+					  	<li id="nav2" class="toggle accordion-toggle"> 
+							<a class="menu-link" href="#">SAP</a>
+					  	</li>
+					  	<!-- accordion-toggle -->
+					  	<ul class="menu-submenu accordion-content">
+							<li><a class="head" href="../sap/sap.html#contentsArea_01">ERP</a></li>
+							<li><a class="head" href="../sap/sap.html#contentsArea_02">모듈구성</a></li>
+							<li><a class="head" href="../sap/sap.html#contentsArea_03">WHY SAP ERP</a></li>
+							<li><a class="head" href="../sap/sap.html#contentsArea_04">10대 경쟁우위 요소</a></li>
+							<li><a class="head" href="../sap/sap.html#contentsArea_05">도입 기대효과</a></li>
+					  </ul>
+					    <li id="nav4" class="toggle accordion-toggle"> 
+							<a class="menu-link" href="../work/work.html">Works</a>
+					    </li>
+					  	<!-- accordion-toggle -->
+					  	<ul class="menu-submenu accordion-content"></ul>
+					  	<li id="nav5" class="toggle accordion-toggle"> 
+							<a class="menu-link" href="#">Recruit</a>
+					   </li>
+					    <!-- accordion-toggle -->
+					    <ul class="menu-submenu accordion-content">
+							<li><a class="head" href="../recruit/talent.html">인재상</a></li>
+							<li><a class="head" href="../recruit/benefits.html">복리후생</a></li>
+							<li><a class="head" href="../recruit/method.html">채용방법</a></li>
+					    </ul>
+					    <li id="nav6" class="toggle accordion-toggle"> 
+							<a class="menu-link" href="#">Company</a>
+					    </li>
+					    <!-- accordion-toggle -->
+					    <ul class="menu-submenu accordion-content">
+						    <li><a class="head" href="../company/company.html">회사소개</a></li>
+						    <li><a class="head" href="../company/history.html">연혁</a></li>
+							<li><a class="head" href="../company/partner.html">파트너</a></li>
+							<!-- <li><a class="head" href="../company/notice.html">공지사항</a></li> -->
+						    <li><a class="head" href="../company/location.html">오시는 길</a></li>
+					  	</ul>
+					    <!-- 230302 삭제 -ys 
+						<li id="nav7" class="mobileSns">
+							<div>
+								<p class="mo_facebook"><a href="https://www.facebook.com/echoit.co.kr/" target="_blank"><img src="../images/facebookIcon.png" alt="페이스북"></a></p>
+								<p class="mo_youtube"><a href="https://www.youtube.com/channel/UCNVOckhOlf_8OkOvgNkd3nA" target="_blank"><img src="../images/youtubeIcon.png" alt="유튜브"></a></p>
+							</div>
+					   </li> -->
+					   <!-- accordion-toggle -->
+					   <ul class="menu-submenu accordion-content"><li></li></ul>
+					   <!-- menu-submenu accordon-content-->
+				   </ul>
+				   <!-- // menu-list-->
+				</div>
+				<!-- // menu-container -->
+				<!-- Menu_icon -->
+				<div id="menu-icon-shape" class="hamberger">
+					<div id="menu-icon">
+						<div id="top"></div>
+						<div id="middle"></div>
+						<div id="bottom"></div>
+					</div>	
+				</div>
+				<!-- Overlay menu -->
+				<div id="overlay-nav">
+					<div id="nav-content">
+						<!--siteMapWrap-->
+						<div class="siteMapWrap">
+							<!--sitemap_header-->
+							<div class="sitemap_header">
+								<!--230302 삭제 -ys -->
+								<!-- <ul class="sitemapSNS">
+									<li class="face_sitemap"><a href="https://www.facebook.com/echoit.co.kr/" target="_blank"><img src="../images/facebookIcon.png" alt="페이스북"/></a></li>
+									<li class="youtube_sitemap"><a href="https://www.youtube.com/channel/UCNVOckhOlf_8OkOvgNkd3nA" target="_blank"><img src="../images/youtubeIcon.png" alt="유튜브"/></a></li>
+								</ul>
+								<a href="https://page.stibee.com/subscriptions/45645" target="_blank" class="newsletterBtn">뉴스레터 구독</a>--><!--뉴스레터구독신청-->
+								<!--//230302 삭제 -ys -->
+								<h3>SITEMAP</h3>
+							</div>
+							<!--// sitemap_header-->
+							<!--sitemap_list-->
+							<div class="sitemap_list">
+								<ul class="sitemapList_wrap">
+									<li class="listDepth first">
+										<p>RPA</p>
+										<ul>
+											 <li><a href="../rpa/rpa.html">RPA 소개</a></li>
+											 <li><a href="../rpa/rpa.html#contentsArea_01-2">RPA 적용가능 업무</a></li>
+											 <li><a href="../rpa/rpa.html#contentsArea_02">RPA 적용스토리</a></li>
+											 <li><a href="../rpa/rpa.html#contentsArea_05">RPA 적용사례</a></li>
+										</ul>
+									</li>
+									<li class="listDepth">
+										<p>SAP</p>
+										<ul>
+											<li><a href="../sap/sap.html">ERP</a></li>
+											<li><a href="../sap/sap.html#contentsArea_02">모듈구성</a></li>
+											<li><a href="../sap/sap.html#contentsArea_03">WHY SAP ERP</a></li>
+											<li><a href="../sap/sap.html#contentsArea_04">10대 경쟁우위 요소</a></li>
+											<li><a href="../sap/sap.html#contentsArea_05">도입 기대효과</a></li>
+										</ul>
+									</li>
+									<li class="listDepth">
+										<p><a href="../work/work.html">Works</a></p>
+									</li>
+									<li class="listDepth">
+										<p>Recruit</p>
+										<ul>
+											<li><a href="../recruit/talent.html">인재상</a></li>
+											<li><a href="../recruit/benefits.html">복리후생</a></li>
+											<li><a href="../recruit/method.html">채용방법</a></li>
+										</ul>
+									</li>
+									<li class="listDepth last">
+										<p>Company</p>
+										<ul>
+											<li><a href="../company/company.html">회사소개</a></li>
+											<li><a href="../company/history.html">연혁</a></li>
+											<li><a href="../company/partner.html">파트너</a></li>
+											<!-- <li><a href="../company/notice.html">공지사항</a></li> -->
+											<!-- 230302 수정 -ys <li><a href="../company/location.html">오시는길</a></li> -->
+											<li><a href="../company/location.html">Contact Us</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<!--// sitemap_list-->
+							
+							<!--230302 삭제 -ys -->
+							<!--sitemap_bottom-->
+							<!-- <div class="sitemap_bottom">
+								<div class="banner_zone">
+									<h4><span>능력있는 개발자</span>를 모십니다</h4>
+									<p>JAVA 개발자, ABAP 개발자</p>
+									<ul>
+										<li class="bannerList01">경력무관</li>
+										<li class="bannerList02">학력무관</li>
+									</ul>
+									<p class="sitemapContact"><a href="mailto:echojob@echoit.co.kr" target="_blank">지원하기</a></p>
+								</div>
+								<div class="contact_list">
+									<div class="contactArea_left">
+										<h4>에코아이티</h4>
+										<p>6342-8021</p>
+										<span>평일 10:00 ~ 19:00</span>
+									</div>
+									<div class="contactArea_right" onclick="mailPopopen(); gtag('event', 'click', {'event_category': 'SAP문의하기'}); tag_con('SAP_sitemap_문의하기');">
+										<ul>
+											<li>
+												<span class="contact_img"><img src="../images/siteMapEmail.png" alt="RPA 문의"></span>
+                                                <span class="contact_title">RPA 문의</span>
+                                            </li>
+											<li>
+												<span class="contact_img"><img src="../images/siteMapEmail.png" alt="SAP 문의"></span>
+												<span class="contact_title">SAP 문의</span>
+											</li>
+											<li>
+												<span class="contact_img"><img src="../images/siteMapEmail.png" alt="SI 문의"></span>
+												<span class="contact_title">SI 문의</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div> -->
+							<!--// sitemap_bottom-->
+							<!--//230302 삭제 -ys -->
+						</div>
+						<!--// siteMapWrap-->
+					</div>
+					<!--// nav-content-->
+				</div>
+				<!--// overlay-nav-->
+			</header>
+			<div class="submenuDim"></div>
+		</div>
+		<div class="menuDim"></div>
+		<!--// sub_header-->
+		<!--visual_area-->
+		<div class="visual_area sap">
+			<!--keyCopy_wrap-->
+			<div class="keyCopy_wrap" data-aos="fade-up" data-aos-delay="0">
+				<div class="keyCopy">
+					<p>SAP 전문가 에코아이티</p>
+					<h3>경영혁신을 위한 <span>SAP</span></h3>
+				</div>
+				<button class="btn-hover color-3">자세히보기</button>
+			</div>
+			<!--// keyCopy_wrap-->
+		</div>
+		<!--// visual_area-->
+
+		<!--230302 추가 -ys-->
+		<div id="stickyTab">
+			<nav>
+				<h2 class="skip">서브메뉴</h2>
+				<ul class="rpa_tab">
+					<li class="on"><a href="#contentsArea_01">ERP</a></li>
+					<li><a href="#contentsArea_02">모듈구성</a></li>
+					<li><a href="#contentsArea_03">WHY SAP ERP</a></li>
+					<li><a href="#contentsArea_04">10대 경쟁우위 요소</a></li>
+					<li class="last"><a href="#contentsArea_05">도입 기대효과</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!--//230302 추가 -ys-->
+
+
+
+
+		<!--contentsArea_01-->
+		<div id="contentsArea_01" class="contents contentsArea_01">
+			<h4 class="smallTitle Eng">Enterprise Resources Planning</h4>
+			<dl class="sapInfo">
+				<dt><span>ERP</span> - <span>전사적 자원관리 시스템</span></dt>
+				<dd data-aos="fade-up">기업의 회계, 판매, 구매, 생산, 인사, 자금 등 기업활동 전반에 걸친 업무를 유기적으로 시스템하여<br> 경영상태를 실시간으로 파악하고 조정할 수 있게 하는 전사적인 통합 소프트웨어 
+				</dd>
+			</dl>
+		</div>
+		<!--// contentsArea_01-->
+		<!--contentsArea_02-->
+		<div id="contentsArea_02" class="contents contentsArea_02">
+			<div class="contents_wrapper">
+				<h4 class="bigTitle">SAP ERP<br><span>모듈구성</span></h4>
+				<ul class="sap_module" data-aos="fade-left">
+					<li>
+						<dl>
+							<dt>FI</dt>
+							<dd>Financial Accounting</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>CO</dt>
+							<dd>Controlling</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>SD</dt>
+							<dd>Sales and Distribution</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>MM</dt>
+							<dd>Material Management</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>PP</dt>
+							<dd>Production Planning</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>PM</dt>
+							<dd>Plant Maintenance</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>QM</dt>
+							<dd>Quality Management</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>TR</dt>
+							<dd>Treasury</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>HR</dt>
+							<dd>Human Resource</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<!--contents_wrapper-->
+		</div>
+		<!--// contentsArea_02-->
+		<!--contentsArea_03-->
+		<div id="contentsArea_03" class="contents contentsArea_03">
+			<!--contents_wrapper-->
+			<div class="contents_wrapper">
+				<h4 class="smallTitle">WHY SAP ERP</h4>
+				<!--whyerp_list-->
+				<ul class="whyerp_list">
+					<li class="whyList whyList_01" data-aos="fade-up"><!--list_01-->
+						<dl>
+							<dt>
+								<div>
+									<img src="../images/whysaplist_01.png" alt="외부 경영 환경의 변화"/>
+									<h5>외부 경영 환경의 변화</h5>
+								</div>
+							</dt>
+							<dd>
+								<ul>
+									<li>업계 최고의 검증된 업무프로세스 재화로 업무 효율화, 합리화 기능</li>
+									<li>다양한 산업사례 반영</li>
+									<li>업계전문가의 지식 반영</li>
+								</ul>
+							</dd>
+						</dl>
+					</li>
+					<li class="whyList whyList_02" data-aos="fade-up"><!--list_02-->
+						<dl>
+							<dt>
+								<div>
+									<img src="../images/whysaplist_02.png" alt="IT 활용으로 생산성 향상"/>
+									<h5>IT 활용으로 생산성 향상</h5>
+								</div>
+							</dt>
+							<dd>
+								<ul>
+									<li>선진정보기술</li>
+									<li>패키지 시스템의 특징인 계속적인 추가기능 이용 가능 및 업그레이드 용이</li>
+								</ul>
+							</dd>
+						</dl>
+					</li>
+					<li class="whyList whyList_03" data-aos="fade-up"><!--list_03-->
+						<dl>
+							<dt>
+								<div>
+									<img src="../images/whysaplist_03.png" alt="부문의 최적에서 전체 최적으로"/>
+									<h5>부문 최적에서 전체 최적으로</h5>
+								</div>
+							</dt>
+							<dd>
+								<ul>
+									<li>Data 처리의 Real Time화</li>
+									<li>업무간의 Data 이중입력 폐지</li>
+									<li>처리속도 향상에 의한 업무처리</li>
+									<li>E-Business 기반 구성</li>
+								</ul>
+							</dd>
+						</dl>
+					</li>
+					<li class="whyList whyList_04" data-aos="fade-up"><!--list_04-->
+						<dl>
+							<dt>
+								<div>
+									<img src="../images/whysaplist_04.png" alt="기업의 글로벌화 지원"/>
+									<h5>기업의 글로벌화 지원</h5>
+								</div>
+							</dt>
+							<dd>
+								<ul>
+									<li>다국적 언어, 다국적 통화관리</li>
+									<li>연결회계대응 : 연결 재무제표 작성</li>
+									<li>연결관리회계 : 부문별 손익 및 그룹회사 전체의 손익관리 가능</li>
+								</ul>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+				<!--// whyerp_list-->
+			</div>
+			<!--// contents_wrapper-->
+		</div>
+		<!--// contentsArea_03-->
+		<!--contentsArea_04-->
+		<div id="contentsArea_04" class="contents contentsArea_04">
+			<!--contents_wrapper-->
+			<div class="contents_wrapper">
+				<h4 class="bigTitle">SAP ERP<br><span><span class="Ko">10</span>대 경쟁우위 요소</span></h4>
+				<!--slider-item-->
+				<div class="slider-item" data-aos="fade-up">
+					<div class="tenList_01">
+						<p><span><img src="../images/tenList_01.png" alt="01 일관된 실행력"/></span></p>
+						<span>01</span>
+						<h3>일관된 실행력</h3>
+					</div>
+					<div class="tenList_02">
+						<p><span><img src="../images/tenList_02.png" alt="02 폭넓은 기능제공"/></span></p>
+						<span>02</span>
+						<h3>폭넓은 기능제공</h3>
+					</div>
+					<div class="tenList_03">
+						<p><span><img src="../images/tenList_03.png" alt="03 회계 기능"/></span></p>
+						<span>03</span>
+						<h3>회계 기능</h3>
+					</div>
+					<div class="tenList_04">
+						<p><span><img src="../images/tenList_04.png" alt="04 기능의 통합성"/></span></p>
+						<span>04</span>
+						<h3>기능의 통합성</h3>
+					</div>
+					<div class="tenList_05">
+						<p><span><img src="../images/tenList_05.png" alt="05 전 세계적 기반"/></span></p>
+						<span>05</span>
+						<h3>전 세계적 기반</h3>
+					</div>
+					<div class="tenList_06">
+						<p><span><img src="../images/tenList_06.png" alt="06 확장성"/></span></p>
+						<span>06</span>
+						<h3>확장성</h3>
+					</div>
+					<div class="tenList_07">
+						<p><span><img src="../images/tenList_07.png" alt="07 컨설팅 서비스"/></span></p>
+						<span>07</span>
+						<h3>컨설팅 서비스</h3>
+					</div>
+					<div class="tenList_08">
+						<p><span><img src="../images/tenList_08.png" alt="08 인터페이스 지원"/></span></p>
+						<span>08</span>
+						<h3>인터페이스 지원</h3>
+					</div>
+					<div class="tenList_09">
+						<p><span><img src="../images/tenList_09.png" alt="09 연구개발"/></span></p>
+						<span>09</span>
+						<h3>연구개발</h3>
+					</div>
+					<div class="tenList_10">
+						<p><span><img src="../images/tenList_10.png" alt="10 생존능력"/></span></p>
+						<span>10</span>
+						<h3>생존능력</h3>
+					</div>
+				</div>
+				<!--// slider-item-->
+			</div>
+			<!--// contents_wrapper-->
+		</div>
+		<!--// contentsArea_04-->
+		<!--contentsArea_05-->
+		<div id="contentsArea_05" class="contents contentsArea_05">
+			<!--contents_wrapper-->
+			<div class="contents_wrapper">
+				<h4 class="bigTitle">SAP ERP<br><span>도입 기대효과</span></h4>
+				<!--sap_infoSlider-->
+				<div class="sap_infoSlider">
+					<!--slider-nav-->
+					<div class="slider slider-nav" data-aos="fade-right">
+						<div>
+							<span>01</span><h4>영업/수주획득 및 관리</h4>
+							<p><img src="../images/sap_effect_01.png"  alt="영업/수주획득 및 관리"/></p>
+							<div class="progressbar"></div>
+						</div>
+						<div>
+							<span>02</span><h4>신제품 개발 및 시장 주도</h4>
+							<p><img src="../images/sap_effect_02.png"  alt="신제품 개발 및 시장 주도"/></p>
+							<div class="progressbar"></div>
+						</div>
+						<div>
+							<span>03</span><h4>Top 레벨 생산 기술 및 품질 수준관리</h4>
+							<p><img src="../images/sap_effect_03.png"  alt="Top 레벨 생산 기술 및 품질 수준관리"/></p>
+							<div class="progressbar"></div>
+						</div>
+						<div>
+							<span>04</span><h4>재무적 Risk에 대한 선제적 대응</h4>
+							<p><img src="../images/sap_effect_04.png"  alt="재무적 Risk에 대한 선제적 대응"/></p>
+							<div class="progressbar"></div>
+						</div>
+						<div>
+							<span>05</span><h4>제품 수익성에 대한 공정 평가</h4>
+							<p><img src="../images/sap_effect_05.png"  alt="제품 수익성에 대한 공정 평가"/></p>
+							<div class="progressbar"></div>
+						</div>
+				  </div>
+				  <!--// slider-nav-->
+				  <!--slider-for-->
+				  <div class="slider slider-for" data-aos="fade-left">
+						<div>
+							<div class="col-md-3 item_img"><img src="../images/sap_imglist_01.png" class="img-responsive" alt="영업/수주획득 및 관리"></div>
+							<div class="col-md-9 item_info">
+								<h4>영업/수주획득 및 관리</h4>
+								<ul >
+									<li>ERP를 활용하여 영업/수주 실적에 대한 사전 모니터링 및 사후 분석 레벨의 고도화를 달성</li>
+									<li>사전 손익분석 및 예측 기능(표준원가 적용)을 통한 시장에서의 경쟁 우위 확보에 기여</li>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div class="col-md-3 item_img"><img src="../images/sap_imglist_02.png" class="img-responsive" alt="신제품 개발 및 시장 주도"></div>
+							<div class="col-md-9 item_info">
+								<h4>신제품 개발 및 시장 주도</h4>
+								<ul>
+									<li>신제품 필요성 및 제품 품질 개선에 대한 사전 인식을 통해서 고객/시장(환경)중심의 경영 패러다임 전환 유도</li>
+									<li>공장별 생산목표 수율 관리를 통한 생산 품질 향상에 기여</li>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div class="col-md-3 item_img"><img src="../images/sap_imglist_03.png" class="img-responsive" alt="Top 레벨 생산 기술 및 품질 수준관리"></div>
+							<div class="col-md-9 item_info">
+								<h4>Top 레벨 생산 기술 및 품질 수준관리</h4>
+								<ul>
+									<li>공장별 생산목표 수율 관리를 통한 생산 품질 향상에 기여</li>
+									<li>다양한 공장 환경에서 동일 품질 제품 관리를 위한 기준의 제공</li>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div class="col-md-3 item_img"><img src="../images/sap_imglist_04.png" class="img-responsive" alt="재무적 Risk에 대한 선제적 대응"></div>
+							<div class="col-md-9 item_info">
+								<h4>재무적 Risk에 대한 선제적 대응</h4>
+								<ul >
+									<li>물류/회계 통합 및 실시간 회계관리를 통해서 재무 현황의 모니터링 기능 강화(결산 기간 단축 포함)</li>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div class="col-md-3 item_img"><img src="../images/sap_imglist_05.png" class="img-responsive" alt="제품 수익성에 대한 공정 평가"></div>
+							<div class="col-md-9 item_info">
+								<h4>제품 수익성에 대한 공정 평가</h4>
+								<ul >
+									<li>물류/회계 통합 및 실시간 회계관리를 통해서 재무 현황의 모니터링 기능 강화(결산 기간 단축 포함)</li>
+									<li>사전 손익분석 및 예측 기능(표준원가 적용)을 통한 시장에서의 경쟁 우위 확보에 기여</li>
+								</ul>
+							</div>
+						</div>
+				  </div>
+				  <!--// slider-for-->
+				</div>
+				<!--// sap_infoSlider-->
+			</div>
+		</div>
+		<!--// contentsArea_05-->
+		<!--sub_footer-->
+		<div class="sub_footer">
+		</div>
+		<!--// sub_footer-->
+		<!--bottom_fixed-->
+		<div class="bottom_fixed">
+			<p class="fTab"><span><!--<i class="fa fa-phone" aria-hidden="true"></i>--><span onclick="gtag('event', 'click', {'event_category': 'SAP하단문의하기'}); tag_con('SAP_하단_문의하기');">문의하기</span></span></p>
+			<div class="goTop_wrap">
+				<p class="goTopBtn" id="back-to-top" title="Back to top"><span><i class="fa fa-chevron-up"></i></span></p>
+			</div>
+		</div>
+		<div class="bottom_fixed_dim"></div>
+		<!--// bottom_fixed-->
+	</div>
+	<!--// sap_wrapper-->
+	<!--mailPop_box-->
+	<div id="mailPop_box">
+	</div>
+	<!--//mailPop_box-->
+        
+    <!-- NAVER SCRIPT START -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "s_76dae02d260";
+if (!_nasa) var _nasa={};
+if (window.wcs ) {
+    wcs.inflow("echoit.co.kr");
+    wcs_do(_nasa);
+}
+</script>
+<!-- NAVER SCRIPT END -->
+        
+	<script  src="../js/jquery213.min.js"></script>
+	<!--Slick-->
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/slick_base.js"></script>
+		<script  src="../js/slick_sap.js"></script>
+	<script  src="../js/MobileMenu.js"></script>
+	<script  src="../js/page.js"></script>
+	<script language="javascript" type="text/javascript">
+	    AOS.init({
+			  throttleDelay: 100,
+			  duration: 700,
+			  once: true,
+			  anchorPlacement: 'top-bottom',
+		});
+	</script>
+	<script>
+		jQuery(function($){
+		$('.fTab').on('click', function(){
+			document.getElementById("mailPop_box").style.display = "block";
+		});
+		$("#back-to-top").click(function() {
+			document.getElementById("mailPop_box").style.display = "none" ;
+			})
+		});
+		function mailPopclose(){
+			document.getElementById("mailPop_box").style.display = "none" ;
+		}
+	</script>
+	<script>
+		function mailPopopen(){ 
+			$('.inp_check').prop("checked",false);
+			$('select').find('option:first').attr('selected', 'selected');
+            $("#user_part").val("선택하기").prop("selected", true);
+			document.getElementById("user_name").value='';
+			document.getElementById("user_Department").value='';
+			document.getElementById("user_email").value='';
+			document.getElementById("user_phone").value='';
+			document.getElementById("user_area").value='';
+			document.getElementById("mailPop_box").style.display = "block";
+		}
+		function mailPopclose(){
+			document.getElementById("mailPop_box").style.display = "none" ;
+		}
+	</script>
+ </body>
+</html>

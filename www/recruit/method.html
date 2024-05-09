@@ -1,0 +1,595 @@
+<?php
+include '/jshc/www/gohttps.html'
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135661226-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-135661226-1');
+		</script>
+		<!-- saved from url=(0013)about:internet -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title>:: 에코아이티 ::</title>
+		<!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no" />
+        <meta name="robots" content="all"/>
+        <meta name="author" content=""/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--[if lt IE 9]>
+		 <script src="' target="_blank">https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		<!--base_JS-->
+		<script  src="../js/jquery-latest.min.js"></script>
+		<!--aos-->
+		<link href="../css/aos.css" rel="stylesheet">
+		<script src="../js/aos.js"></script>
+		<!--custom_css-->
+		<link rel="stylesheet" type="text/css" href="../css/subPage.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+        <!--base_css-->
+		<link rel="stylesheet" href="../css/font-awesome.min.css">
+		<script src="../js/mail_ver04.js" charset='euc-kr'></script>
+		<script type="text/javascript">   
+            $(document).ready( function() {
+            
+            $(".sub_footer").load("../common/footer.html");  
+            
+            });
+        </script>
+ 	</head>
+ 	<body  data-aos-easing="ease" data-aos-duration="700" data-aos-delay="0">
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$.ajax({
+					type: "POST",
+					url: "/common/mail.html",
+					dataType : 'html',
+					cache: false,
+					success : function(html){
+					$('#mailPop_box').append(html);
+					}
+					});
+			});
+		</script> 
+	<!--skip_Navi-->
+	<div id="skipNavi">
+		<ul>
+			<li><a href="#topnav">주메뉴바로가기</a></li>
+			<li><a href="#contentsArea_01">본문바로가기</a></li>
+		</ul>
+	</div>
+	<!--// skip_Navi-->
+	<!--sub_wrapper-->
+	<div id="sub_wrapper">
+		<!--sub_header-->
+		<div class="sub_header nav-menu" data-aos="fade-down" data-aos-delay="0">
+			<header>
+				<h1 class="wh_logo"><a href="../index.html"><img src="../images/sub_logo.png" alt="에코아이티"/></a></h1>
+				<h1 class="basic_logo"><a href="../index.html"><img src="../images/sub_logo_basic.png" alt="에코아이티"/></a></h1>
+				<!--gnb-->
+				<nav>
+					<h2 class="skip">주메뉴</h2>
+					<ul  id="topnav" class="gnb_menu">
+						<li class="depth first">
+							<a href="../rpa/rpa.html">RPA</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>Robotic Process Automation<dt>
+												<dd>전문 컨설턴트 상담부터 전문 기술인력 개발까지<br>고객에 맞는 RPA 시스템을 제공하고 있습니다<dd>
+											</dl>
+											<!-- 230302 삭제 -ys <button class="BluelineBtn" onclick="location.href='../rpa/rpa.html'">RPA 바로가기</button> -->
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="../rpa/rpa.html">RPA 소개</a></li>
+											<li><a href="../rpa/rpa.html#contentsArea_01-2">RPA 적용가능 업무</a></li>
+											<li><a href="../rpa/rpa.html#contentsArea_02">RPA 적용스토리</a></li>
+											<li><a href="../rpa/rpa.html#contentsArea_05">RPA 적용사례</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="depth">
+							<a href="../sap/sap.html">SAP</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>SAP<dt>
+												<dd>고객이 원하는 모든 유형의  SAP구축 경험을 바탕으로 고객에 맞는 SAP 솔루션을 제공하고 있습니다<dd>
+											</dl>
+											<!-- 230302 삭제 -ys <button class="BluelineBtn" onclick="location.href='../sap/sap.html'">SAP 바로가기</button> -->
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="../sap/sap.html">ERP</a></li>
+											<li><a href="../sap/sap.html#contentsArea_02">모듈구성</a></li>
+											<li><a href="../sap/sap.html#contentsArea_03">WHY SAP ERP</a></li>
+											<li><a href="../sap/sap.html#contentsArea_04">10대 경쟁우위 요소</a></li>
+											<li><a href="../sap/sap.html#contentsArea_05">도입 기대효과</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="depth">
+							<a href="../work/work.html">Works</a>
+						</li>
+						<li class="depth">
+							<a href="../recruit/talent.html">Recruit</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>Recruit<dt>
+												<dd>에코아이티와 함께 성장하고 새로운 꿈을 펼칠 열정적인 인재를 기다립니다<dd>
+											</dl>
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="../recruit/talent.html">인재상</a></li>
+											<li><a href="../recruit/benefits.html">복리후생</a></li>
+											<li><a href="../recruit/method.html">채용방법</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="depth">
+							<a href="../company/company.html">Company</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>Company<dt>
+												<dd>성공 비즈니스 파트너 에코아이티를 소개합니다<dd>
+											</dl>
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="../company/company.html">회사소개</a></li>
+											<li><a href="../company/history.html">연혁</a></li>
+											<li><a href="../company/partner.html">파트너</a></li>
+											<!-- 220728 수정 ys <li><a href="../company/notice.html">공지사항</a></li> -->
+											<!-- 230302 수정 -ys <li><a href="../company/location.html">오시는길</a></li> -->
+											<li><a href="../company/location.html">Contact Us</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<!--// gnb-->
+
+				<!--menu-container : 모바일-->
+				<div id="menu-container">
+				   <div id="menu-wrapper">
+					  <div id="hamburger-menu"><span></span><span></span><span></span></div>
+					  <!-- hamburger-menu -->
+				   </div>
+				   <!-- menu-list -->
+				   <ul class="menu-list accordion">
+					  <li id="nav1" class="toggle accordion-toggle"> 
+						 <span class="icon-plus"></span><a class="menu-link" href="#">RPA</a>
+					  </li>
+					  <!-- accordion-toggle -->
+					  <ul class="menu-submenu accordion-content">
+						 <li><a class="head" href="../rpa/rpa.html">RPA 소개</a></li>
+						 <li><a class="head" href="../rpa/rpa.html#contentsArea_01-2">RPA 적용가능 업무</a></li>
+						 <li><a class="head" href="../rpa/rpa.html#contentsArea_02">RPA 적용스토리</a></li>
+						 <li><a class="head" href="../rpa/rpa.html#contentsArea_05">RPA 적용사례</a></li>
+					  </ul>
+
+					  <li id="nav2" class="toggle accordion-toggle"> 
+						 <a class="menu-link" href="#">SAP</a>
+					  </li>
+					  <!-- accordion-toggle -->
+					  <ul class="menu-submenu accordion-content">
+						<li><a class="head" href="../sap/sap.html">ERP</a></li>
+						<li><a class="head" href="../sap/sap.html#contentsArea_02">모듈구성</a></li>
+						<li><a class="head" href="../sap/sap.html#contentsArea_03">WHY SAP ERP</a></li>
+						<li><a class="head" href="../sap/sap.html#contentsArea_04">10대 경쟁우위 요소</a></li>
+						<li><a class="head" href="../sap/sap.html#contentsArea_05">도입 기대효과</a></li>
+					  </ul>
+
+
+					  <li id="nav4" class="toggle accordion-toggle"> 
+						 <a class="menu-link" href="../work/work.html">Works</a>
+					  </li>
+					  <!-- accordion-toggle -->
+					  <ul class="menu-submenu accordion-content"></ul>
+
+					  <li id="nav5" class="toggle accordion-toggle"> 
+						 <a class="menu-link" href="#">Recruit</a>
+					  </li>
+					  <!-- accordion-toggle -->
+					  <ul class="menu-submenu accordion-content">
+						 <li><a class="head" href="../recruit/talent.html">인재상</a></li>
+						 <li><a class="head" href="../recruit/benefits.html">복리후생</a></li>
+						 <li><a class="head" href="../recruit/method.html">채용방법</a></li>
+					  </ul>
+
+					  <li id="nav6" class="toggle accordion-toggle"> 
+						 <a class="menu-link" href="#">Company</a>
+					  </li>
+					  <!-- accordion-toggle -->
+					  <ul class="menu-submenu accordion-content">
+						<li><a class="head" href="../company/company.html">회사소개</a></li>
+						<li><a class="head" href="../company/history.html">연혁</a></li>
+						<li><a class="head" href="../company/partner.html">파트너</a></li>
+						<!-- 220728 수정 ys <li><a class="head" href="../company/notice.html">공지사항</a></li> -->
+						<li><a class="head" href="../company/location.html">오시는 길</a></li>
+					  </ul>
+
+					   <!-- 230302 삭제 -ys 
+					  <li id="nav7" class="mobileSns">
+						<div>
+							<p class="mo_facebook"><a href="https://www.facebook.com/echoit.co.kr/" target="_blank"><img src="../images/facebookIcon.png" alt="페이스북"></a></p>
+							<p class="mo_youtube"><a href="https://www.youtube.com/channel/UCNVOckhOlf_8OkOvgNkd3nA" target="_blank"><img src="../images/youtubeIcon.png" alt="유튜브"></a></p>
+						</div>
+					  </li> -->
+					  <!-- accordion-toggle -->
+					  <ul class="menu-submenu accordion-content"><li></li></ul>
+
+					  <!-- menu-submenu accordon-content-->
+				   </ul>
+				   <!-- // menu-list-->
+				</div>
+				<!-- // menu-container -->
+				
+				<!-- Menu_icon -->
+				<div id="menu-icon-shape" class="hamberger">
+					<div id="menu-icon">
+						  <div id="top"></div>
+						  <div id="middle"></div>
+						  <div id="bottom"></div>
+					</div>	
+				</div>
+				<!-- Overlay menu -->
+				<div id="overlay-nav">
+					<div id="nav-content">
+						<!--siteMapWrap-->
+						<div class="siteMapWrap">
+							<!--sitemap_header-->
+							<div class="sitemap_header">
+								<!--230302 삭제 -ys -->
+								<!-- <ul class="sitemapSNS">
+									<li class="face_sitemap"><a href="https://www.facebook.com/echoit.co.kr/" target="_blank"><img src="../images/facebookIcon.png" alt="페이스북"/></a></li>
+									<li class="youtube_sitemap"><a href="https://www.youtube.com/channel/UCNVOckhOlf_8OkOvgNkd3nA" target="_blank"><img src="../images/youtubeIcon.png" alt="유튜브"/></a></li>
+								</ul>
+								<a href="https://page.stibee.com/subscriptions/45645" target="_blank" class="newsletterBtn">뉴스레터 구독</a> -->
+								<!--뉴스레터구독신청-->
+								<!--//230302 삭제 -ys -->
+								<h3>SITEMAP</h3>
+							</div>
+							<!--// sitemap_header-->
+							<!--sitemap_list-->
+							<div class="sitemap_list">
+								<ul class="sitemapList_wrap">
+									<li class="listDepth first">
+										<p>RPA</p>
+										<ul>
+											 <li><a href="../rpa/rpa.html">RPA 소개</a></li>
+											 <li><a href="../rpa/rpa.html#contentsArea_01-2">RPA 적용가능 업무</a></li>
+											 <li><a href="../rpa/rpa.html#contentsArea_02">RPA 적용스토리</a></li>
+											 <li><a href="../rpa/rpa.html#contentsArea_05">RPA 적용사례</a></li>
+										</ul>
+									</li>
+									<li class="listDepth">
+										<p>SAP</p>
+										<ul>
+											<li><a href="../sap/sap.html">ERP</a></li>
+											<li><a href="../sap/sap.html#contentsArea_02">모듈구성</a></li>
+											<li><a href="../sap/sap.html#contentsArea_03">WHY SAP ERP</a></li>
+											<li><a href="../sap/sap.html#contentsArea_04">10대 경쟁우위 요소</a></li>
+											<li><a href="../sap/sap.html#contentsArea_05">도입 기대효과</a></li>
+										</ul>
+                                    </li>
+									<li class="listDepth">
+										<p><a href="../work/work.html">Works</a></p>
+									</li>
+									<li class="listDepth">
+										<p>Recruit</p>
+										<ul>
+											<li><a href="../recruit/talent.html">인재상</a></li>
+											<li><a href="../recruit/benefits.html">복리후생</a></li>
+											<li><a href="../recruit/method.html">채용방법</a></li>
+										</ul>
+									</li>
+									<li class="listDepth last">
+										<p>Company</p>
+										<ul>
+											<li><a href="../company/company.html">회사소개</a></li>
+											<li><a href="../company/history.html">연혁</a></li>
+											<li><a href="../company/partner.html">파트너</a></li>
+											<!-- <li><a href="../company/notice.html">공지사항</a></li> -->
+											<!-- 230302 삭제 -ys <li><a href="../company/location.html">오시는길</a></li> -->
+											<li><a href="../company/location.html">Contact Us</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<!--// sitemap_list-->
+							
+							<!--230302 삭제 -ys -->
+							<!--sitemap_bottom-->
+							<!-- <div class="sitemap_bottom">
+								<div class="banner_zone">
+									<h4><span>능력있는 개발자</span>를 모십니다</h4>
+									<p>RPA 개발자, JAVA 개발자, ABAP 개발자</p>
+									<ul>
+										<li class="bannerList01">경력무관</li>
+										<li class="bannerList02">학력무관</li>
+									</ul>
+									<p class="sitemapContact"><a href="mailto:echojob@echoit.co.kr" target="_blank">지원하기</a></p>
+								</div>
+								<div class="contact_list">
+									<div class="contactArea_left">
+										<h4>에코아이티</h4>
+										<p>6342-8021</p>
+										<span>평일 10:00 ~ 19:00</span>
+									</div>
+									<div class="contactArea_right" onclick="mailPopopen(); gtag('event', 'click', {'event_category': 'recurit_채용방법문의하기'}); tag_con('recruit채용방법_페이지');">
+										<ul>
+											<li>
+												<span class="contact_img"><img src="../images/siteMapEmail.png" alt="RPA 문의"></span>
+                                                <span class="contact_title">RPA 문의</span>
+                                            </li>
+											<li>
+												<span class="contact_img"><img src="../images/siteMapEmail.png" alt="SAP 문의"></span>
+												<span class="contact_title">SAP 문의</span>
+											</li>
+											<li>
+												<span class="contact_img"><img src="../images/siteMapEmail.png" alt="SI 문의"></span>
+												<span class="contact_title">SI 문의</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div> -->
+							<!--// sitemap_bottom-->
+							<!--//230302 삭제 -ys -->
+						</div>
+						<!--// siteMapWrap-->
+					</div>
+					<!--// nav-content-->
+				</div>
+				<!--// overlay-nav-->
+			</header>
+			<div class="submenuDim"></div>
+		</div>
+		<div class="menuDim"></div>
+		<!--// sub_header-->
+		<!--sub_visual-->
+		<div class="sub_visual recruit">
+			<div class="sub_topTIlte">
+				<h3>RECRUIT</h3>
+				<p><span>에코아이티</span>에서 <br>새로운 꿈을 펼쳐보세요</p>
+			</div>
+		</div>
+		<!--// sub_visual-->
+		<!--stickyTab-->
+		<div id="stickyTab">
+			<nav>
+				<h2 class="skip">서브메뉴</h2>
+				<ul class="recruit_tab">
+					<li><a href="talent.html">인재상</a></li>
+					<li><a href="benefits.html">복리후생</a></li>
+					<li class="last on"><a href="#">채용방법</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="readout"></div>
+		<!--// stickyTab-->
+		<!--sub_contents-->
+		<div id="sub_contents">
+			<!--talent : 인재상-->
+			<div class="contents echo_method">
+				<!--contents_title-->
+				<div class="contents_title">
+					<h3>채용방법</h3>
+					<p>에코아이티는 수년간 쌓아온 다양한 프로젝트 경험과 선진화 된 IT 기술력을 바탕으로 다수의 프로젝트를 완벽히 수행하여 왔습니다 <br>매해 꾸준한 비즈니스 확장과 프로젝트 수주로 함께 성장할 정직원을 모십니다</p>
+				</div>
+				<!--// contents_title-->
+				<!--contents_con-->
+				<div class="contents_con">
+					<!--method_list-->
+					<ul class="method_list" data-aos="fade-up">
+						<li class="method_list01">
+							<dl>
+								<dt><p><img src="../images/method_icon01.png"alt="01.서류전형"></p></dt>
+								<dd>
+									<span>Step. 01</span>
+									<p>서류전형</p>
+								</dd>
+							</dl>
+						</li>
+						<li class="method_list02">
+							<dl>
+								<dt><p><img src="../images/method_icon02.png"alt="02.인터뷰"></p></dt>
+								<dd>
+									<span>Step. 02</span>
+									<p>인터뷰</p>
+								</dd>
+							</dl>
+						</li>
+						<li class="method_list03"> 
+							<dl>
+								<dt><p><img src="../images/method_icon03.png"alt="03.채용"></p></dt>
+								<dd>
+									<span>Step. 03</span>
+									<p>채용</p>
+								</dd>
+							</dl>
+						</li>
+						<li class="method_list04">
+							<dl>
+								<dt><p><img src="../images/method_icon04.png"alt="04.교육"></p></dt>
+								<dd>
+									<span>Step. 04</span>
+									<p>교육</p>
+								</dd>
+							</dl>
+						</li>
+						<li class="method_list05">
+							<dl>
+								<dt><p><img src="../images/method_icon05.png"alt="05.프로젝트 투입"></p></dt>
+								<dd>
+									<span>Step. 05</span>
+									<p>프로젝트 투입</p>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+					<!--// method_list-->
+					<!--pcTable-->
+					<table cellpadding="0" cellspacing="0" class="method_table pcTable" data-aos="fade-up" style="margin-top:50px">
+						<caption>채용방법</caption>
+						<colgroup>
+							<col style="width:20%;"/>
+							<col style="width:80%;"/>
+						</colgroup>
+						<tbody>
+							  <tr>
+									<th>모집분야</th>
+									<td>RPA 개발자, JAVA개발자, ABAP개발자</td>
+							  </tr>
+							  <tr>
+									 <th>모집기간</th>
+									<td>상시채용</td>
+							  </tr>
+							  <tr>
+									<th>자격조건</th>
+									<td>
+										<ul class="recruit_info">
+											<li>• 학력 : 전문학사 이상</li>
+											<li>• 경력 : 신입 및 1년이상 경력자</li>
+											<li>• 우대사항 : 정보처리기사자격증 보유자</li>
+										</ul>
+									</td>
+							  </tr>
+							  <tr>
+									 <th>제출서류</th>
+									<td>이력서(경력 기술서), 자기소개서</td>
+							  </tr>
+							  <tr>
+									 <th>제출방법</th>
+									<td>이메일 제출 echojob@echoit.co.kr</td>
+							  </tr>
+						</tbody>
+					</table>
+					<!--moTable-->
+					<table cellpadding="0" cellspacing="0" class="method_table moTable">
+						<caption>채용방법</caption>
+						<colgroup>
+							<col style="width:100%;"/>
+						</colgroup>
+						<tbody>
+							  <tr>
+									<th>모집분야</th>
+							  </tr>
+							   <tr>
+									<td>JAVA개발자, ABAP개발자</td>
+							  </tr>
+							  <tr>
+									 <th>모집기간</th>
+							  </tr>
+							   <tr>
+									<td>상시채용</td>
+							  </tr>
+							  <tr>
+									<th>자격조건</th>
+							  </tr>
+							   <tr>
+									<td>
+										<ul class="recruit_info">
+											<li>• 학력 : 전문학사 이상</li>
+											<li>• 경력 : 신입 및 1년이상 경력자</li>
+											<li>• 우대사항 : 정보처리기사자격증 보유자</li>
+										</ul>
+									</td>
+							  </tr>
+							  <tr>
+									 <th>제출서류</th>
+							  </tr>
+							  <tr>
+									<td>이력서(경력 기술서), 자기소개서</td>
+							  </tr>
+							  <tr>
+									 <th>제출방법</th>
+							  </tr>
+							  <tr>
+									<td>이메일 제출 echojob@echoit.co.kr</td>
+							  </tr>
+						</tbody>
+					</table>
+				</div>
+				<!--// contents_con-->
+			</div>
+			<!--// talent : 인재상-->
+		</div>
+		<!--// sub_contents-->
+		<!--sub_footer-->
+		<div class="sub_footer">
+		</div>
+		<!--// sub_footer-->
+		<!--bottom_fixed-->
+		<div class="bottom_fixed">
+			<div class="goTop_wrap">
+				<p class="goTopBtn" id="back-to-top" title="Back to top"><span><i class="fa fa-chevron-up"></i></span></p>
+			</div>
+		</div>
+		<!--// bottom_fixed-->
+	</div>
+	<!--// sub_wrapper-->
+	<!--mailPop_box-->
+	<div id="mailPop_box">
+	</div>
+	<!--//mailPop_box-->
+	<script  src="../js/MobileMenu.js"></script>
+	<script  src="../js/page.js"></script>
+	<script  src="../js/subPage.js"></script>
+	<script>
+		function mailPopopen(){ 
+			$('.inp_check').prop("checked",false);
+			$('select').find('option:first').attr('selected', 'selected');
+            $("#user_part").val("선택하기").prop("selected", true);
+			document.getElementById("user_name").value='';
+			document.getElementById("user_Department").value='';
+			document.getElementById("user_email").value='';
+			document.getElementById("user_phone").value='';
+			document.getElementById("user_area").value='';
+			document.getElementById("mailPop_box").style.display = "block";
+		}
+		function mailPopclose(){
+			document.getElementById("mailPop_box").style.display = "none" ;
+		}
+	</script>
+ </body>
+</html>

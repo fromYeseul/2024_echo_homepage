@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>sitemap</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <style>
+    body,
+    html {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color: #333333;
+      text-decoration: none;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .sitemap-menu {
+      position: absolute;
+      display: inline-block;
+      overflow-y: scroll;
+      padding-top: 58px;
+      width: 270px;
+      box-sizing: border-box;
+      height: 100%;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .sitemap-menu::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    .sitemap-menu::-webkit-scrollbar-thumb {
+      background-color: #eee;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .sitemap-menu.mobile {
+      display: none;
+    }
+
+    .viewersize {
+      position: fixed;
+      padding: 10px 0px;
+      background: #3f6b9d;
+      border-radius: 5px;
+      width: 230px;
+      margin: 10px;
+      left: 0;
+      top: 0;
+      color: #fff;
+      z-index: 10;
+      cursor: pointer;
+    }
+
+    .sitemap-menu .tabs-btn {
+      position: sticky;
+      top: 20px;
+      padding: 0 10px 10px;
+      background: #fff;
+    }
+
+    .sitemap-menu .tabs-btn li {
+      display: inline-block;
+      margin: 0 5px 5px 0;
+      text-align: center;
+      padding: 5px 10px;
+      background: #aaa;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 13px;
+    }
+
+    .sitemap-menu .tabs-btn li:last-child {
+      margin-right: 0;
+    }
+
+    .sitemap-menu .tabs-btn li.on {
+      background: #328ff6;
+    }
+
+    .sitemap-menu .tabs-btn li a {
+      display: block;
+    }
+
+    .sitemap-menu .tabs-btn li a span{      
+      margin-left: 4px;
+      background-color: #fe5e37;
+      color: #ffffff;
+      font-size: 10px;
+      padding: 2px 3px;
+      border-radius: 50%;
+    }
+
+    .range-wrap {
+      display: none;
+    }
+
+    .range-wrap.on {
+      display: block;
+    }
+
+    .range-wrap .range {
+      margin-bottom: 20px;
+    }
+
+    .range-wrap .range h3 {
+      font-size: 20px;
+      padding: 0 10px;
+      color: #333333;
+    }
+
+    .range-wrap .range h4 {
+      font-size: 15px;
+      padding: 10px 10px 0;
+      color: #6363ab;
+    }
+
+    .range-wrap .range>ul {
+      border-top: 1px solid #ddd;
+      background: #eeffff;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+
+    .range-wrap:nth-of-type(2) .range>ul {
+      background: #fff2f2
+    }
+
+    .range-wrap:nth-of-type(3) .range>ul {
+      background: #f4efff;
+    }
+
+    .range-wrap:nth-of-type(4) .range>ul {
+      background: #fdfce0;
+    }
+
+    .range-wrap .range li {
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+      color: #666;
+      font-size: 13px;
+    }
+
+    .range-wrap .range li:after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+
+    .range-wrap .range li .sub-title {
+      display: block;
+      text-transform: uppercase;
+    }
+
+    .sub-title em {
+      color: red;
+    }
+
+    .sub-title span {
+      margin-left: 4px;
+      background-color: #48c1c7;
+      color: #ffffff;
+      font-size: 10px;
+      padding: 2px 3px;
+      /* margin-right: 3px; */
+      border-radius: 50%;
+    }
+
+    .range-wrap .range li .btn-wrap {
+      float: right;
+      padding-top: 10px;
+    }
+
+    .range-wrap .range li .btn-wrap .new-win {
+      display: inline-block;
+      border: 1px solid #666;
+      padding: 3px;
+      font-size: 11px;
+    }
+
+    .range-wrap .range li .btn-wrap a.ready {
+      color: #ccc;
+    }
+
+    .range-wrap .range li .btn-wrap a.on {
+      color: #f00;
+    }
+
+    iframe {
+      width: calc(100% - 270px);
+      position: absolute;
+      left: 270px;
+      top: 0;
+      height: 100%;
+      box-sizing: border-box;
+      display: inline-block;
+      border: 0;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    iframe.mobile {
+      width: 490px;
+      height: 700px;
+      padding: 0;
+      overflow: scroll;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sitemap-menu">
+    <button class="viewersize">모바일size보기</button>
+    <ul class="tabs-btn">
+      <li><a href="javascript:void(0)">홈페이지 before</a></li>
+      <li class="on"><a href="javascript:void(0)">홈페이지 after</a></li>
+    </ul>
+    <div class="range-wrap">
+      <div class="range">
+        <h3></h3>
+        <h4>Index</h4>
+        <ul>
+            <li>
+                <div class="sub-title">index</div>
+                <div class="btn-wrap">
+                  <a href="index.html" target="viewer">index.html</a>
+                  <a href="index.html" target="_blank" class="new-win">새창</a>
+                </div>
+            </li>
+        </ul>
+        <h4>Business</h4>
+        <ul>
+          <li>
+            <div class="sub-title">rpa소개</div>
+            <div class="btn-wrap">
+              <a href="rpa/rpa.html" target="viewer">rpa/rpa.html</a>
+              <a href="rpa/rpa.html" target="_blank" class="new-win">새창</a>
+            </div>
+          </li>
+          <li>
+            <div class="sub-title">sap소개</div>
+            <div class="btn-wrap">
+              <a href="sap/sap.html" target="viewer">sap/sap.html</a>
+              <a href="sap/sap.html" target="_blank" class="new-win">새창</a>
+            </div>
+          </li>
+        </ul>
+        <h4>Work</h4>
+        <ul>
+            <li>
+              <div class="sub-title">work</div>
+              <div class="btn-wrap">
+                <a href="work/work.html" target="viewer">work/work.html</a>
+                <a href="work/work.html" target="_blank" class="new-win">새창</a>
+              </div>
+            </li>
+        </ul>
+        <h4>Recruit</h4>
+        <ul>
+            <li>
+              <div class="sub-title">인재상</div>
+              <div class="btn-wrap">
+                <a href="recruit/talent.html" target="viewer">recruit/talent.html</a>
+                <a href="recruit/talent.html" target="_blank" class="new-win">새창</a>
+              </div>
+            </li>
+            <li>
+              <div class="sub-title">복리후생</div>
+              <div class="btn-wrap">
+                <a href="recruit/benefits.html" target="viewer">recruit/benefits.html</a>
+                <a href="recruit/benefits.html" target="_blank" class="new-win">새창</a>
+              </div>
+            </li>
+            <li>
+              <div class="sub-title">채용방법</div>
+              <div class="btn-wrap">
+                <a href="recruit/method.html" target="viewer">recruit/method.html</a>
+                <a href="recruit/method.html" target="_blank" class="new-win">새창</a>
+              </div>
+            </li>
+        </ul>
+        <h4>Company</h4>
+        <ul>
+            <li>
+              <div class="sub-title">회사소개</div>
+              <div class="btn-wrap">
+                <a href="company/company.html" target="viewer">company/company.html</a>
+                <a href="company/company.html" target="_blank" class="new-win">새창</a>
+              </div>
+            </li>
+            <li>
+              <div class="sub-title">연혁</div>
+              <div class="btn-wrap">
+                <a href="company/history.html" target="viewer">company/history.html</a>
+                <a href="company/history.html" target="_blank" class="new-win">새창</a>
+              </div>
+            </li>
+            <li>
+              <div class="sub-title">파트너</div>
+              <div class="btn-wrap">
+                <a href="company/partner.html" target="viewer">company/partner.html</a>
+                <a href="company/partner.html" target="_blank" class="new-win">새창</a>
+              </div>
+            </li>
+            <li>
+              <div class="sub-title">Contact us</div>
+              <div class="btn-wrap">
+                <a href="company/location.html" target="viewer">company/location.html</a>
+                <a href="company/location.html" target="_blank" class="new-win">새창</a>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+    <div class="range-wrap on">
+      <div class="range">
+        <h3></h3>
+        <h4>Index</h4>
+        <ul>
+            <li>
+                <div class="sub-title">index</div>
+                <div class="btn-wrap">
+                  <a href="index2024.html" target="viewer">index2024.html</a>
+                  <a href="index2024.html" target="_blank" class="new-win">새창</a>
+                </div>
+            </li>
+        </ul>
+        <h4>Business</h4>
+        <ul>
+          <li>
+            <div class="sub-title">sap</div>
+            <div class="btn-wrap">
+              <a href="sap/sap2024.html" target="viewer">sap/sap2024.html</a>
+              <a href="sap/sap2024.html" target="_blank" class="new-win">새창</a>
+            </div>
+          </li>
+          <li>
+            <div class="sub-title">ai/rpa</div>
+            <div class="btn-wrap">
+              <a href="rpa/rpa2024.html" target="viewer">rpa/rpa2024.html</a>
+              <a href="rpa/rpa2024.html" target="_blank" class="new-win">새창</a>
+            </div>
+          </li>
+          <li>
+            <div class="sub-title">mendix</div>
+            <div class="btn-wrap">
+              <a href="mendix/mendix2024.html" target="viewer">mendix/mendix2024.html</a>
+              <a href="mendix/mendix2024.html" target="_blank" class="new-win">새창</a>
+            </div>
+          </li>
+          <li>
+            <div class="sub-title">salesforce</div>
+            <div class="btn-wrap">
+              <a href="salesforce/salesforce2024.html" target="viewer">salesforce/salesforce2024.html</a>
+              <a href="salesforce/salesforce2024.html" target="_blank" class="new-win">새창</a>
+            </div>
+          </li>
+          <li>
+            <div class="sub-title">ito</div>
+            <div class="btn-wrap">
+              <a href="ito/ito2024.html" target="viewer">ito/ito2024.html</a>
+              <a href="ito/ito2024.html" target="_blank" class="new-win">새창</a>
+            </div>
+          </li>
+        </ul>
+        <h4>Notice</h4>
+        <ul>
+            <li>
+              <div class="sub-title">esg</div>
+              <div class="btn-wrap">
+                <a href="esg/esg2024.html" target="viewer">esg/esg2024.html</a>
+                <a href="esg/esg2024.html" target="_blank" class="new-win">새창</a>
+              </div>
+            </li>
+            <li>
+              <div class="sub-title">work</div>
+              <div class="btn-wrap">
+                <a href="work/work2024.html" target="viewer">work/work2024.html</a>
+                <a href="work/work2024.html" target="_blank" class="new-win">새창</a>
+              </div>
+            </li>
+        </ul>
+        <h4>Recruit</h4>
+        <ul>
+            <li>
+              <div class="sub-title">recruit</div>
+              <div class="btn-wrap">
+                <a href="recruit/recruit2024.html" target="viewer">recruit/recruit2024.html</a>
+                <a href="recruit/recruit2024.html" target="_blank" class="new-win">새창</a>
+              </div>
+            </li>
+        </ul>
+        <h4>Company</h4>
+        <ul>
+            <li>
+              <div class="sub-title">company</div>
+              <div class="btn-wrap">
+                <a href="company/company2024.html" target="viewer">company/company2024.html</a>
+                <a href="company/company2024.html" target="_blank" class="new-win">새창</a>
+              </div>
+            </li>
+            <li>
+              <div class="sub-title">location</div>
+              <div class="btn-wrap">
+                <a href="company/location2024.html" target="viewer">company/location2024.html</a>
+                <a href="company/location2024.html" target="_blank" class="new-win">새창</a>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <iframe src="" name="viewer" class="" style="overflow:hidden;"></iframe>
+
+  <script>
+    // link
+    var links = $('.range a');
+    for (i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", function () {
+        for (i = 0; i < links.length; i++) {
+          links[i].classList.remove('on');
+
+        }
+        this.classList.add('on');
+      })
+
+    }
+    // tab
+    $('.tabs-btn a').click(function () {
+      $(this).parent('li').addClass('on').siblings().removeClass('on');
+      var index = $(this).parent('li').index();
+      $('.range-wrap').eq(index).addClass('on').siblings().removeClass('on');;
+    });
+
+    $('.viewersize').click(function () {
+
+      $('iframe').toggleClass('mobile');
+    });
+
+
+    $('.title.lg').click(function () {
+      $(this).toggleClass('on');
+      $(this).next("div.range").slideToggle();
+    });
+    $('.title.lg').click();
+  </script>
+</body>
+
+</html>

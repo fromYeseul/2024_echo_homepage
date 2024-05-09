@@ -1,0 +1,318 @@
+<div class="footer_wrap">
+    <footer>
+
+        <div class="footer_top">
+            <div class="linkArea">
+                <ul>
+                    <li class="square_btn">							
+                        <a href="https://page.stibee.com/subscriptions/45645" target="_blank">뉴스레터 구독</a>
+                    </li>
+                    <li class="square_btn" style="opacity: 0.8; cursor: not-allowed;">							
+                        <a href="javascript:void(0);" download="apple" style="opacity: 0.5; cursor: not-allowed;">
+                            회사소개서 <i class="download"></i>
+                        </a>
+                    </li>
+                    <li class="square_btn">							
+                        <a href="../esg/esg.html" >지속가능경영</a>
+                    </li>
+                    <li class="square_btn reportBtn">							
+                    <!-- <li class="square_btn">							 -->
+                        <a href="javascript:void(0);" onclick="gtag('event', 'click', {'event_category': 'footer제보하기'}); tag_con('footer제보하기');">제보하기</a>
+                        <!-- <span onclick="gtag('event', 'click', {'event_category': 'footer제보하기'}); tag_con('footer제보하기');">제보하기</span> -->
+                    </li>	
+                </ul>
+            </div>
+            <div class="snsBox">                
+                <a href="https://www.facebook.com/echoit.co.kr" target="_blank" class="sns_fb"></a>
+                <a href="https://blog.naver.com/echoit2008" target="_blank" class="sns_blog"></a>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <h1><img src="images/2024/footer/footer_logo.png" alt="에코아이티"/></h1>
+            <ul class="addressArea">
+                <!-- 220728 ys 수정 <li class="first"><p class="address">서울시 강남구 테헤란로 78길 14-6 동성빌딩 5층</p><span>TEL</span> 02-6342-8021&nbsp;&nbsp;<span>FAX</span> 02-864-8021</li>					 -->
+                <li class="first">
+                    <p class="address">
+                    <!-- 230302 수정 -ys 서울특별시 강남구 강남대로146길 25(논현동) 4층, 5층 -->
+                    <!--서울특별시 강남구 강남대로146길 25(에코스페이스) 4층, 5층 &nbsp;&nbsp;-->
+                    서울특별시 강남구 강남대로146길 25(에코스페이스) 4층 &nbsp;&nbsp;<br class="only-mo">
+                    <span>TEL</span> 
+                    02-6342-8021&nbsp;&nbsp;
+                    <span>FAX</span>
+                    02-864-8021
+                    </p>
+                </li>					
+                <li>
+                    <ul class="familySite">
+                        <!-- 220728 ys 수정 
+                        <li><a href="http://www.echoit.co.kr/rest/index.html" target="_blank">에코 연수원</a></li> -->
+                        <!-- 230302 수정 -ys <li><a href="http://www.echoit.co.kr/rest/index.html" target="_blank">에코 휴양소</a></li> -->
+                        <li><a href="http://www.echoit.co.kr/rest/index.html" target="_blank">힐링하우스</a></li>
+                        <li class="familyFancy">|</li>
+                        <li><a href="https://echoit.daouoffice.com" target="_blank">에코 메아리</a></li>
+                        <li class="familyFancy">|</li>
+                        <!-- 230302 삭제 -ys <li><a href="https://page.stibee.com/subscriptions/45645" target="_blank">뉴스레터 구독</a></li> -->
+                        <li><a href="http://www.echoit.co.kr/common/company-personal_info.html" target="_blank">개인정보 처리방침</a></li>
+                    </ul>
+                </li>
+                <li class="copy">Copyright © Echo Information Technology Co., LTD All Right Reserved.</li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+
+<div id="report_mailPop_box" style="display: none;">
+    <div class="mailPop">
+        <div class="layerheader">
+            <a href="javascript: report_mailPopclose();" class="close" title="팝업창 닫기">
+                <img src="../images/black_closebtn.png" alt="">
+            </a>
+        </div>
+        <div class="layerbody">
+            <div class="mailInfo">
+                <p class="title">제보하기</p>
+                <p>안녕하세요. ㈜에코아이티입니다.</p>
+                <p>아래 담당자 메일로 문의 주시면 빠르게 답변드리겠습니다.</p>
+            </div>
+            <div class="mailInfo_form">
+                <form name="reportMailInfo_AjaxForm" id="reportMailInfo_AjaxForm" enctype="multipart/form-data" action="/common/report_mail.php" method="post">
+                    <table cellpadding="0" cellspacing="0" class="tableType1">
+                        <caption>제보하기 상세폼</caption>
+                        <colgroup>
+                            <col style="width: 20%;">
+                            <col style="width: 30%;">
+                            <col style="width: 20%;">
+                            <col style="width: 30%;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th class="on_point">제보유형</th>
+                                <td colspan="3">
+                                    <div class="comp_check t_col">
+                                        <input class="inp_check" id="rType1" name="report_type" type="checkbox" value="부정/비리" aria-hidden="true"> 
+                                        <label class="lab_check" for="rType1" aria-checked="false" aria-disabled="false"><span class="txt">부정/비리</span></label>
+
+                                        <input class="inp_check" id="rType2" name="report_type" type="checkbox" value="협력사 고충 및 불공정 거래" aria-hidden="true">
+                                        <label class="lab_check" for="rType2" aria-checked="false" aria-disabled="false"><span class="txt">협력사 고충 및 불공정 거래</span></label>
+
+                                        <input class="inp_check" id="rType3" name="report_type" type="checkbox" value="조직문화 저해" aria-hidden="true">
+                                        <label class="lab_check" for="rType3" aria-checked="false" aria-disabled="false"> <span class="txt">조직문화 저해</span></label> 
+
+                                        <input class="inp_check" id="rType4" name="report_type" type="checkbox" value="서비스개선" aria-hidden="true">
+                                        <label class="lab_check" for="rType4" aria-checked="false" aria-disabled="false"> <span class="txt">서비스개선</span></label> 
+                                        
+                                        <input class="inp_check" id="rType5" name="report_type" type="checkbox" value="기타" aria-hidden="true"> 
+                                        <label class="lab_check" for="rType5" aria-checked="false" aria-disabled="false"><span class="txt">기타</span></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="on_point">제목</th>
+                                <td colspan="3">
+                                    <div class="comp_input wp3">
+                                        <input class="inp_txt" id="report_title" name="user_name" type="text">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="on_point">제보내용</th>
+                                <td colspan="3"><textarea class="t_area" id="report_contents" name="user_area"></textarea></td>
+                            </tr>
+                            <tr>
+                                <th class="on_point">에코아이티와의 관계</th>
+                                <td colspan="3">
+                                    <div class="comp_check t_col">
+                                        <input class="inp_check" id="eRel1" name="echo_rel" type="checkbox" value="임직원" aria-hidden="true"> 
+                                        <label class="lab_check" for="eRel1" aria-checked="false" aria-disabled="false"><span class="txt">임직원</span></label>
+
+                                        <input class="inp_check" id="eRel2" name="echo_rel" type="checkbox" value="협력업체" aria-hidden="true">
+                                        <label class="lab_check" for="eRel2" aria-checked="false" aria-disabled="false"><span class="txt">협력업체</span></label>
+
+                                        <input class="inp_check" id="eRel3" name="echo_rel" type="checkbox" value="고객" aria-hidden="true">
+                                        <label class="lab_check" for="eRel3" aria-checked="false" aria-disabled="false"> <span class="txt">고객</span></label> 
+
+                                        <input class="inp_check" id="eRel5" name="echo_rel" type="checkbox" value="기타" aria-hidden="true"> 
+                                        <label class="lab_check" for="eRel5" aria-checked="false" aria-disabled="false"><span class="txt">기타</span></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>첨부파일</th>
+                                <td colspan="3">
+                                    <!-- <form id="uploadForm" enctype="multipart/form-data"> -->
+                                        <input type="file" id="report_file" name="report_file" multiple>
+                                    <!-- </form> -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="agreeBox">
+                        <p class="on_point">필수입력 항목입니다.</p>
+                    </div>
+		            <input type="hidden" id="checked_report_type1" name="checked_report_type" />
+		            <input type="hidden" id="message1" name="message" />
+                </form>
+            </div>
+            <div class="popBtn">
+                <button class="contactBtn" type="button" onclick="reportMailInfo_AjaxCall('POST')">등록</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- NAVER SCRIPT START -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "s_76dae02d260";
+if (!_nasa) var _nasa={};
+if (window.wcs ) {
+    wcs.inflow("echoit.co.kr");
+    wcs_do(_nasa);
+}
+</script>
+<!-- NAVER SCRIPT END -->
+
+<script>
+    
+    $('.reportBtn').on('click', function(){
+        $('.inp_check').prop("checked",false);
+        document.getElementById("report_title").value='';
+        document.getElementById("report_contents").value='';
+        document.getElementById("report_file").value='';
+        document.getElementById("report_mailPop_box").style.display = "block";
+        // document.getElementById("report_mailPop_box").style.display = "block";
+    });
+
+    function report_mailPopclose(){
+        document.getElementById("report_mailPop_box").style.display = "none" ;
+    }
+</script>
+<script>
+    // function mailPopopen(){ 
+    //     $('.inp_check').prop("checked",false);
+    //     document.getElementById("report_title").value='';
+    //     document.getElementById("report_contents").value='';
+    //     document.getElementById("report_file").value='';
+    //     document.getElementById("report_mailPop_box").style.display = "block";
+    // }
+    // function report_mailPopclose(){
+    //     document.getElementById("report_mailPop_box").style.display = "none" ;
+    // }
+</script>
+
+
+<script>
+    var checked_report_type = "";
+	var checked_echo_rel = "";
+	var message = "";
+
+	var file = "";
+	// var fileName = "";
+
+	function reportMailInfo_AjaxCall(method) { 
+        console.log('method', method);
+		//제목
+		var mail_title = "";
+		mail_title = $("#report_title").val();
+		if(typeof(mail_title)=="undefined"){
+			mail_title ="";
+		}
+		//제보 내용
+		var mail_contents = $(".t_area").val();
+		var items=[];
+            //제보타입
+            $("input[name='report_type']:checked").each(function(){items.push($(this).val());});    
+            checked_report_type = items.join(',');
+	
+            items=[];
+            $("input[name='echo_rel']:checked").each(function(){items.push($(this).val());});
+            checked_echo_rel = items.join(',');
+
+        
+        //첨부파일
+        //file = $("#report_file");
+
+		if(checked_report_type == ""){
+			alert("제보유형을 선택해주세요");
+		}else if(mail_title == ""){
+			alert("제목을 입력해주세요");
+ 		}else if(checked_echo_rel == ""){
+			alert("에코아이티와의 관계를 입력해주세요");
+ 		}else if(checked_report_type != null){		
+			message = 
+            "에코아이티와의 관계: " + checked_echo_rel + "<br><br>" + 
+            "제목: " + mail_title + "<br><br>" + 
+            "제보 내용: " + mail_contents;
+            
+            $("#checked_report_type1").val(checked_report_type);
+            $("#message1").val(message);
+            $("#reportMailInfo_AjaxForm").submit();
+            
+            return;
+
+		    $.ajax({ 
+				type: "POST",
+				url : "/common/report_mail.php", /*서버: common/mail.php*/
+				cache : false,
+				data: createData(),
+				//dataType:"html",
+				enctype: 'multipart/form-data',
+                processData : false,
+                contentType : false,
+				success : function(data, status, xhr) { 
+					alert("제보가 완료되었습니다.");
+					if (method == "POST"){
+						report_mailPopclose();
+                        //sendFile();
+					}else if(method =="RESET"){
+						RESET();
+					}
+				},
+				error: function(request, status, error) { 
+					alert("제보하기를 실패하였습니다.");
+				} 
+			}); 		
+		}
+	}
+	function createData() {
+        //sendFile();
+        var attached_file = $('#report_file')[0].files;
+        //console.log("name :" , attached_file.files);
+        var sendData = new FormData($("#reportMailInfo_AjaxForm")[0]); 
+
+        sendData.set("checked_report_type",checked_report_type);
+        sendData.set("message",message);
+        sendData.set("report_file",attached_file);
+        return sendData;
+	}
+    
+    //첨부파일
+    function sendFile(){        
+        var attached_file = $('#report_file');
+        var report_file = new FormData(attached_file.files);
+
+
+        console.log(attached_file);
+        console.log(report_file);
+
+        // $.ajax({
+        //     type:"post",
+        //     enctype:'multipart/form-data',
+        //     url: "/common/report_mail.php",
+        //     data: report_file,
+        //     dataType:'json',
+        //     processData:false,
+        //     contentType:false,
+        //     cache:false,
+        //     success:function(data){
+        //         console.log("success : ", data);
+        //     },
+        //     error:function(e){
+        //         console.log("error : ", e);
+        //     }
+        // });
+    }
+</script>

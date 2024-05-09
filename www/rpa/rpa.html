@@ -1,0 +1,947 @@
+<?php
+include '/jshc/www/gohttps.html'
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135661226-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-135661226-1');
+		</script>
+		<!-- saved from url=(0013)about:internet -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title>:: 에코아이티 ::</title>
+		<!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no" />
+        <meta name="robots" content="all"/>
+        <meta name="author" content=""/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--[if lt IE 9]>
+		 <script src="' target="_blank">https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		<!--custom_css-->
+		<link rel="stylesheet" type="text/css" href="../css/owlCarousel.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/rpa.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+       <link rel="stylesheet" type="text/css" href="../css/subPage.css"/>
+        <!--base_css-->
+		<link rel="stylesheet" href="../css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+		<link rel="stylesheet" href="../css/animate.min.css">
+		<script  src="../js/jquery-latest.min.js"></script>
+		<!--aos-->
+		<link href="../css/aos.css" rel="stylesheet">
+		<script src="../js/aos.js"></script>
+		<script src="../js/mail_ver04.js" charset='euc-kr'></script>
+		<script type="text/javascript">   
+            $(document).ready( function() {
+            
+            $(".sub_footer").load("../common/footer.html");  
+            
+            });
+        </script>
+ 	</head>
+ 	<body data-aos-easing="ease" data-aos-duration="700" data-aos-delay="0">
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$.ajax({
+					type: "POST",
+					url: "/common/mail.html",
+					dataType : 'html',
+					cache: false,
+					success : function(html){
+					$('#mailPop_box').append(html);
+					}
+				});
+			});
+		</script> 
+	<!--skip_Navi-->
+	<div id="skipNavi">
+		<ul>
+			<li><a href="#topnav">주메뉴바로가기</a></li>
+			<li><a href="#contentsArea_01">본문바로가기</a></li>
+		</ul>
+	</div>
+	<!--// skip_Navi-->
+	<!--rpa_wrapper-->
+	<div id="rpa_wrapper">
+		<!--sub_header-->
+		<div class="sub_header nav-menu" data-aos="fade-down" data-aos-delay="0">
+			<header>
+				<h1 class="wh_logo"><a href="../index.html"><img src="../images/sub_logo.png" alt="에코아이티"/></a></h1>
+				<h1 class="basic_logo"><a href="../index.html"><img src="../images/sub_logo_basic.png" alt="에코아이티"/></a></h1>
+				<!--gnb-->
+				<nav>
+					<h2 class="skip">주메뉴</h2>
+					<ul  id="topnav" class="gnb_menu">
+						<li class="depth first">
+							<a href="../rpa/rpa.html">RPA</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>Robotic Process Automation<dt>
+												<dd>전문 컨설턴트 상담부터 전문 기술인력 개발까지<br>고객에 맞는 RPA 시스템을 제공하고 있습니다<dd>
+											</dl>
+											<!-- 230302 삭제 -ys <button class="BluelineBtn" onclick="location.href='../rpa/rpa.html'">RPA 바로가기</button> -->
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="#contentsArea_01">RPA 소개</a></li>
+											<li><a href="#contentsArea_01-2">RPA 적용가능 업무</a></li>
+											<li><a href="#contentsArea_02">RPA 적용스토리</a></li>
+											<li><a href="#contentsArea_05">RPA 적용사례</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="depth">
+							<a href="../sap/sap.html">SAP</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>SAP<dt>
+												<dd>고객이 원하는 모든 유형의 SAP구축 경험을 바탕으로 고객에 맞는 SAP 솔루션을 제공하고 있습니다<dd>
+											</dl>
+											<!-- 230302 삭제 -ys <button class="BluelineBtn" onclick="location.href='../sap/sap.html'">SAP 바로가기</button> -->
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="../sap/sap.html">ERP</a></li>
+											<li><a href="../sap/sap.html#contentsArea_02">모듈구성</a></li>
+											<li><a href="../sap/sap.html#contentsArea_03">WHY SAP ERP</a></li>
+											<li><a href="../sap/sap.html#contentsArea_04">10대 경쟁우위 요소</a></li>
+											<li><a href="../sap/sap.html#contentsArea_05">도입 기대효과</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="depth">
+							<a href="../work/work.html">Works</a>
+						</li>
+						<li class="depth">
+							<a href="../recruit/talent.html">Recruit</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>Recruit<dt>
+												<dd>에코아이티와 함께 성장하고 새로운 꿈을 펼칠 열정적인 인재를 기다립니다<dd>
+											</dl>
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="../recruit/talent.html">인재상</a></li>
+											<li><a href="../recruit/benefits.html">복리후생</a></li>
+											<li><a href="../recruit/method.html">채용방법</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="depth">
+							<a href="../company/company.html">Company</a>
+							<div class="submenu">
+								<div class="depth_wrap">
+									<div class="depth_left">
+										<div>
+											<dl>
+												<dt>Company<dt>
+												<dd>성공 비즈니스 파트너 에코아이티를 소개합니다<dd>
+											</dl>
+										</div>
+									</div>
+									<div class="depth_right">
+										<ul>
+											<li><a href="../company/company.html">회사소개</a></li>
+											<li><a href="../company/history.html">연혁</a></li>
+											<li><a href="../company/partner.html">파트너</a></li>
+											<!-- 220728 수정 ys <li><a href="../company/notice.html">공지사항</a></li> -->
+											<!-- 230302 수정 -ys <li><a href="../company/location.html">오시는길</a></li> -->
+											<li><a href="../company/location.html">Contact Us</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<!--// gnb-->
+				<!--menu-container : 모바일-->
+				<div id="menu-container">
+				    <div id="menu-wrapper">
+						<div id="hamburger-menu"><span></span><span></span><span></span></div>
+					  <!-- hamburger-menu -->
+				    </div>
+				   <!-- menu-list -->
+				    <ul class="menu-list accordion">
+						<li id="nav1" class="toggle accordion-toggle"> 
+							<span class="icon-plus"></span><a class="menu-link" href="#">RPA</a>
+					  	</li>
+					    <!-- accordion-toggle -->
+					    <ul class="menu-submenu accordion-content">
+							<li><a class="head" href="../rpa/rpa.html">RPA 소개</a></li>
+							<li><a class="head" href="../rpa/rpa.html#contentsArea_01-2">RPA 적용가능 업무</a></li>
+							<li><a class="head" href="../rpa/rpa.html#contentsArea_02">RPA 적용스토리</a></li>
+							<li><a class="head" href="../rpa/rpa.html#contentsArea_05">RPA 적용사례</a></li>
+					  	</ul>
+					  	<li id="nav2" class="toggle accordion-toggle"> 
+							<a class="menu-link" href="#">SAP</a>
+					  	</li>
+					  	<!-- accordion-toggle -->
+					  	<ul class="menu-submenu accordion-content">
+							<li><a class="head" href="../sap/sap.html">ERP</a></li>
+							<li><a class="head" href="../sap/sap.html#contentsArea_02">모듈구성</a></li>
+							<li><a class="head" href="../sap/sap.html#contentsArea_03">WHY SAP ERP</a></li>
+							<li><a class="head" href="../sap/sap.html#contentsArea_04">10대 경쟁우위 요소</a></li>
+							<li><a class="head" href="../sap/sap.html#contentsArea_05">도입 기대효과</a></li>
+					  	</ul>
+					  	<li id="nav4" class="toggle accordion-toggle"> 
+							<a class="menu-link" href="../work/work.html">Works</a>
+					  	</li>
+					  	<!-- accordion-toggle -->
+					  	<ul class="menu-submenu accordion-content"></ul>
+					  	<li id="nav5" class="toggle accordion-toggle"> 
+							<a class="menu-link" href="#">Recruit</a>
+					  	</li>
+					  	<!-- accordion-toggle -->
+					  	<ul class="menu-submenu accordion-content">
+							<li><a class="head" href="../recruit/talent.html">인재상</a></li>
+							<li><a class="head" href="../recruit/benefits.html">복리후생</a></li>
+							<li><a class="head" href="../recruit/method.html">채용방법</a></li>
+					  	</ul>
+					  	<li id="nav6" class="toggle accordion-toggle"> 
+							<a class="menu-link" href="#">Company</a>
+					  	</li>
+					  	<!-- accordion-toggle -->
+					  	<ul class="menu-submenu accordion-content">
+						    <li><a class="head" href="../company/company.html">회사소개</a></li>
+						    <li><a class="head" href="../company/history.html">연혁</a></li>
+							<li><a class="head" href="../company/partner.html">파트너</a></li>
+							<!-- 220728 수정 ys <li><a class="head" href="../company/notice.html">공지사항</a></li> -->
+						    <li><a class="head" href="../company/location.html">오시는 길</a></li>
+					  	</ul>
+					   	<!-- 230302 삭제 -ys 
+						<li id="nav7" class="mobileSns">
+							<div>
+								<p class="mo_facebook"><a href="https://www.facebook.com/echoit.co.kr/" target="_blank"><img src="../images/facebookIcon.png" alt="페이스북"></a></p>
+								<p class="mo_youtube"><a href="https://www.youtube.com/channel/UCNVOckhOlf_8OkOvgNkd3nA" target="_blank"><img src="../images/youtubeIcon.png" alt="유튜브"></a></p>
+							</div>
+					  	</li> -->
+					  	<!-- accordion-toggle -->
+					  	<ul class="menu-submenu accordion-content"><li></li></ul>
+					  	<!-- menu-submenu accordon-content-->
+				   	</ul>
+				   	<!-- // menu-list-->
+				</div>
+				<!-- // menu-container -->
+				<!-- Menu_icon -->
+				<div id="menu-icon-shape" class="hamberger">
+					<div id="menu-icon">
+						<div id="top"></div>
+						<div id="middle"></div>
+						<div id="bottom"></div>
+					</div>	
+				</div>
+				<!-- Overlay menu -->
+				<div id="overlay-nav">
+					<div id="nav-content">
+						<!--siteMapWrap-->
+						<div class="siteMapWrap">
+							<!--sitemap_header-->
+							<div class="sitemap_header">
+								<!--230302 삭제 -ys -->
+								<!--<ul class="sitemapSNS">
+									<li class="face_sitemap"><a href="https://www.facebook.com/echoit.co.kr/" target="_blank"><img src="../images/facebookIcon.png" alt="페이스북"/></a></li>
+									<li class="youtube_sitemap"><a href="https://www.youtube.com/channel/UCNVOckhOlf_8OkOvgNkd3nA" target="_blank"><img src="../images/youtubeIcon.png" alt="유튜브"/></a></li>
+								</ul>
+								<a href="https://page.stibee.com/subscriptions/45645" target="_blank" class="newsletterBtn">뉴스레터 구독</a>--> <!--뉴스레터구독신청-->
+								<!--//230302 삭제 -ys -->
+								<h3>SITEMAP</h3>
+							</div>
+							<!--// sitemap_header-->
+							<!--sitemap_list-->
+							<div class="sitemap_list">
+								<ul class="sitemapList_wrap">
+									<li class="listDepth first">
+										<p>RPA</p>
+										<ul>
+											<li><a href="../rpa/rpa.html">RPA 소개</a></li>
+											<li><a href="../rpa/rpa.html#contentsArea_01-2">RPA 적용가능 업무</a></li>
+											<li><a href="../rpa/rpa.html#contentsArea_02">RPA 적용스토리</a></li>
+											<li><a href="../rpa/rpa.html#contentsArea_05">RPA 적용사례</a></li>
+										</ul>
+									</li>
+									<li class="listDepth">
+										<p>SAP</p>
+										<ul>
+											<li><a href="../sap/sap.html">ERP</a></li>
+											<li><a href="../sap/sap.html#contentsArea_02">모듈구성</a></li>
+											<li><a href="../sap/sap.html#contentsArea_03">WHY SAP ERP</a></li>
+											<li><a href="../sap/sap.html#contentsArea_04">10대 경쟁우위 요소</a></li>
+											<li><a href="../sap/sap.html#contentsArea_05">도입 기대효과</a></li>
+										</ul>
+									</li>
+									<li class="listDepth">
+										<p><a href="../work/work.html">Works</a></p>
+									</li>
+									<li class="listDepth">
+										<p>Recruit</p>
+										<ul>
+											<li><a href="../recruit/talent.html">인재상</a></li>
+											<li><a href="../recruit/benefits.html">복리후생</a></li>
+											<li><a href="../recruit/method.html">채용방법</a></li>
+										</ul>
+									</li>
+									<li class="listDepth last">
+										<p>Company</p>
+										<ul>
+											<li><a href="../company/company.html">회사소개</a></li>
+											<li><a href="../company/history.html">연혁</a></li>
+											<li><a href="../company/partner.html">파트너</a></li>
+											<!-- 220728 수정 ys <li><a href="../company/notice.html">공지사항</a></li> -->
+											<!-- 230302 수정 -ys <li><a href="../company/location.html">오시는길</a></li> -->
+											<li><a href="../company/location.html">Contact Us</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<!--// sitemap_list-->
+
+							<!--230302 삭제 -ys -->
+							<!--sitemap_bottom-->
+							<!-- <div class="sitemap_bottom">
+								<div class="banner_zone">
+									<h4><span>능력있는 개발자</span>를 모십니다</h4>
+									<p>JAVA 개발자, ABAP 개발자</p>
+									<ul>
+										<li class="bannerList01">경력무관</li>
+										<li class="bannerList02">학력무관</li>
+									</ul>
+									<p class="sitemapContact"><a href="mailto:echojob@echoit.co.kr" target="_blank">지원하기</a></p>
+								</div>
+								<div class="contact_list">
+									<div class="contactArea_left">
+										<h4>에코아이티</h4>
+										<p>6342-8021</p>
+										<span>평일 10:00 ~ 19:00</span>
+									</div>
+									<div class="contactArea_right" onclick="mailPopopen(); gtag('event', 'click', {'event_category': 'RPA문의하기'}); tag_con('RPA_sitemap_문의하기');">
+										<ul>
+											<li>
+												<span class="contact_img"><img src="../images/siteMapEmail.png" alt="RPA 문의"></span>
+                                                <span class="contact_title">RPA 문의</span>
+                                            </li>
+											<li>
+												<span class="contact_img"><img src="../images/siteMapEmail.png" alt="SAP 문의"></span>
+												<span class="contact_title">SAP 문의</span>
+											</li>
+											<li>
+												<span class="contact_img"><img src="../images/siteMapEmail.png" alt="SI 문의"></span>
+												<span class="contact_title">SI 문의</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div> -->
+							<!--// sitemap_bottom-->
+							<!--//230302 삭제 -ys -->
+						</div>
+						<!--// siteMapWrap-->
+					</div>
+					<!--// nav-content-->
+				</div>
+				<!--// overlay-nav-->
+			</header>
+			<div class="submenuDim"></div>
+		</div>
+		<div class="menuDim"></div>
+		<!--// sub_header-->
+		<!--visual_area-->
+		<div class="visual_area">
+			<!--keyCopy_wrap-->
+			<div class="keyCopy_wrap" data-aos="fade-up" data-aos-delay="0">
+				<div class="keyCopy">
+					<p>로봇 프로세스 자동화 전문가 에코아이티</p>
+					<h3>업무혁신을 위한 <span>RPA</span></h3>
+					<!-- <ul>
+						<li class="first">RPA Leader<br>AA Global Partner</li>
+						<li class="aaLogo"><img src="../images/aa_logo.png" alt="Automation Anywhere"/></li>
+					</ul> -->
+				</div>
+				<button class="btn-hover color-2">자세히보기</button>
+			</div>
+			<!--// keyCopy_wrap-->
+		</div>
+		<div id="stickyTab">
+			<nav>
+				<h2 class="skip">서브메뉴</h2>
+				<ul class="rpa_tab">
+					<li class="on"><a href="#contentsArea_01">RPA 소개</a></li>
+					<li><a href="#contentsArea_01-2">RPA 적용가능 업무</a></li>
+					<li><a href="#contentsArea_02">RPA 적용스토리</a></li>
+					<li class="last"><a href="#contentsArea_05">RPA 적용사례</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!--// visual_area-->
+		<!--contentsArea_01-->
+		<div id="contentsArea_01" class="contents contentsArea_01">
+			<h4 class="smallTitle Eng">Robotic Process Automation</h4>
+			<dl class="rpaInfo">
+				<dt><span>소프트웨어 로봇</span>이 <span>인간의 업무를 대신</span> 수행하는 것</dt>
+				<!-- 220728 ys 수정 
+					<dd data-aos="fade-up">RPA는 소프트웨어와 인공지능 기술 기반으로 업무 프로세스를 자동화하는 기술 입니다.<br>
+				RPA는 사람이 컴퓨터로 처리하는 ‘반복적’, ‘규칙적’. ‘대량의 작업’을 자동으로 처리하는 소프트웨어입니다.<br>
+				현재 RPA는 금융, 유통, 제조, IT 등 전 산업으로 급속히 확산 중이며, 고객서비스, 재무, 회계 등 전 업무로 확장될 것으로 기대되고 있습니다. -->
+				<dd data-aos="fade-up">
+					RPA는 인공지능 기술을 기반으로 업무 프로세스를 자동화하는 지능형 로봇 소프트웨어입니다.<br>
+					사람이 컴퓨터로 처리하는 반복적, 규칙적, 대량의 작업을 자동화하는 기술로 금융, 유통, 제조, IT 등 산업 전분야에 걸쳐 도입, 확산되고 있습니다.<br>
+					앞으로 RPA는 AI와 결합하여 더욱 진화, 발전할 것이며 일하는 방식과 프로세스는 더욱 혁신적으로 변화할 것입니다.					
+
+				<p>(2035년까지 35%의 업무가 자동화 될 것으로 예상 / The Future of Employment, Oxford university, 2016)</p>
+				</dd>
+			</dl>
+		</div>
+		<!--// contentsArea_01-->
+		<!--contentsArea_01-2-->
+		<div id="contentsArea_01-2" class="contents contentsArea_01-2">
+			<div class="contentsArea_01-2_in">
+				<h4 class="bigTitle">RPA<br><span>적용가능 업무</span></h4>
+				<!--rpa_infoSlider-->
+				<div class="rpa_infoSlider">
+					<!--slider-nav-->
+					<div class="slider slider-nav" data-aos="fade-right">
+						<div>
+							<span>01</span><h4>다수의 시스템을 사용하는 업무</h4>
+							<p><img src="../images/rpalist_img_01.png"  alt="다수의 시스템을 사용하는 업무"/></p>
+							<div class="progressbar"></div>
+						</div>
+						<div>
+							<span>02</span><h4>다량의 거래를 수작업 처리하는 업무</h4>
+							<p><img src="../images/rpalist_img_02.png"  alt="다량의 거래를 수작업 처리하는 업무"/></p>
+							<div class="progressbar"></div>
+						</div>
+						<div>
+							<span>03</span><h4>예외가 제한적인 업무</h4>
+							<p><img src="../images/rpalist_img_03.png"  alt="예외가 제한적인 업무"/></p>
+							<div class="progressbar"></div>
+						</div>
+						<div>
+							<span>04</span><h4>오류 및 작업빈도가 높거나 부정 발생 가능 업무</h4>
+							<p><img src="../images/rpalist_img_04.png"  alt="오류 및 작업빈도가 높거나 부정 발생 가능 업무"/></p>
+							<div class="progressbar"></div>
+						</div>
+						<div>
+							<span>05</span><h4>일과 시간 외 처리 업무</h4>
+							<p><img src="../images/rpalist_img_05.png"  alt="일과 시간 외 처리 업무"/></p>
+							<div class="progressbar"></div>
+						</div>
+						<div>
+							<span>06</span><h4>반복적으로 발생할 새로운 단순 업무</h4>
+							<p><img src="../images/rpalist_img_06.png"  alt="반복적으로 발생할 새로운 단순 업무"/></p>
+							<div class="progressbar"></div>
+						</div>
+				  </div>
+				  <!--// slider-nav-->
+				  <!--slider-for-->
+				  <div class="slider slider-for" data-aos="fade-left">
+						<div>
+							<div class="col-md-3 item_img"><img src="../images/rpa_imglist_01.png" class="img-responsive" alt="다수의 시스템을 사용하는 업무"></div>
+							<div class="col-md-9 item_info">
+								<h4>다수의 시스템을 사용하는 업무</h4>
+								<p>예) 인사처리 업무 시나리오</p>
+								<ul class="systemList">
+									<li><p>KPI시스템</p><span>정보 다운로드</span></li>
+									<li><p>엑셀</p><span>정보 편집</span></li>
+									<li><p>E-mail</p><span>정보 전송, 홍보</span></li>
+									<li><p>인사시스템</p><span>개인정보 갱신</span></li>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div class="col-md-3 item_img"><img src="../images/rpa_imglist_02.png" class="img-responsive" alt="다량의 거래를 수작업 처리하는 업무"></div>
+							<div class="col-md-9 item_info">
+								<h4>다량의 거래를 수작업 처리하는 업무</h4>
+								<p>
+									전표 입력, 신규 고객에게 '감사메일' 전송 등 다량의 거래 또는 정보를
+									수작업으로 처리함으로써 많은 노동력과 장시간 작업이
+									요구되는 프로세스
+								</p>
+							</div>
+						</div>
+						<div>
+							<div class="col-md-3 item_img"><img src="../images/rpa_imglist_03.png" class="img-responsive" alt="예외가 제한적인 업무"></div>
+							<div class="col-md-9 item_info">
+								<h4>예외가 제한적인 업무</h4>
+								<p>
+									업무 처리 예외가 적고, 정의된 업무 수행규칙이 있는 프로세스
+									사람의 판단이 필요하지 않은 조건으로 구분 분류 될 수 있는 프로세스
+								</p>
+							</div>
+						</div>
+						<div>
+							<div class="col-md-3 item_img"><img src="../images/rpa_imglist_04.png" class="img-responsive" alt="오류 및 작업빈도가 높거나 부정 발생 가능 업무"></div>
+							<div class="col-md-9 item_info">
+								<h4>오류 및 작업빈도가 높거나 부정 발생 가능 업무</h4>
+								<p>
+									업무 담당자의 실수, 임의적 판단 오류 등으로 업무 누락 및 에러가 발생할 수 있는 프로세스
+									고의적인 누락이나 데이터 조작으로 인해 부정 발생이 가능한 프로세스
+								</p>
+							</div>
+						</div>
+						<div>
+							<div class="col-md-3 item_img"><img src="../images/rpa_imglist_05.png" class="img-responsive" alt="일과 시간 외 처리 업무"></div>
+							<div class="col-md-9 item_info">
+								<h4>일과 시간 외 처리 업무</h4>
+								<p>
+									일과 시간 외에 처리되어야 함으로써 직원의 야근 및 주말근무를 필요로 하는 프로세스
+									주기적이나 매주 또는 매월에 한번씩 작업하여 작업 발생 시 시간외 근무를 하게 되는 업무
+								</p>
+							</div>
+						</div>
+						<div>
+							<div class="col-md-3 item_img"><img src="../images/rpa_imglist_06.png" class="img-responsive" alt="반복적으로 발생할 새로운 단순 업무"></div>
+							<div class="col-md-9 item_info">	
+								<h4>반복적으로 발생할 새로운 단순 업무</h4>
+								<p>
+									앞으로 반복적으로 발생할 것이지만 새로운 업무를 위하여 인력을 새로 추가할 필요성이 크지 않은 업무,
+									현 직원들이 추가로 담당하기에 업무가 너무 가중 될 것 같은 작업
+								</p>
+							</div>
+						</div>
+				  </div>
+				  <!--// slider-for-->
+				</div>
+				<!--// rpa_infoSlider-->				
+			</div>
+			<!--contentsArea_01-2_in-->
+		</div>
+		<!--// contentsArea_01-2-->
+		<!--contentsArea_02-->
+		<div id="contentsArea_02" class="contents contentsArea_02">
+			<div class="contents_wrapper wh">
+				<div class="content">
+				   <!--slider-->
+				  <div class="news_slider">
+						<div class="item">
+							<div class="image">
+								<div class="story_contents_top">
+									<p class="story_smallTitle"><span>RPA 적용스토리</span></p>
+								</div>
+								<div class="story_contents_bottom">
+									<img class="story_img story_img_01" src="../images/story_png_01.png" alt="robot"/>
+									<div class="story_contents">
+										<p class="story_contents_text story_title">S 반도체 홍대리</p>
+									</div>
+								</div>
+							</div>
+						</div><!--// item-->
+						<div class="item">
+							<div class="image">
+								<div class="story_contents_top">
+									<p class="story_bigTitle">제품불량 및 고객클레임 발생</p>
+								</div>
+								<div class="story_contents_bottom">
+									<img class="story_img story_img_02" src="../images/story_png_02.png" alt="robot"/>
+									<div class="story_contents">
+										<p class="story_contents_text story_con">S반도체 홍대리는 매일 제품 불량이 있거나 고객의 클레임이 발생하면 해당 제품이 생산되는 공정이력을 분석하여 원인 파악 및 조치보고를 해야한다.  
+										</p>
+									</div>
+								</div>
+							</div>
+						</div><!--// item-->
+						<div class="item">
+							<div class="image">
+								<div class="story_contents_top">
+									<p class="story_bigTitle">원인 분석에 많은 시간소요</p>
+								</div>
+								<div class="story_contents_bottom">
+									<img class="story_img story_img_03" src="../images/story_png_03.png" alt="robot"/>
+									<div class="story_contents">
+										<p class="story_contents_text story_con">
+											원인을 파악하기 위해 생산공정에서 발생되는 데이터를 관리하는 수많은 시스템을 일일히
+											접속해 데이터를 추출하여 찾아야한다. 문제는 원인을 파악하는데도 시간이 걸리지만, 원인에 대한 정확한
+											근거를 만들어야 하기에 시스템에 접속하여 데이터를 다운받아 정리해야 된다.
+											1건 원인을 파악 하는데 약 1시간이 걸린다면 데이터를 찾아 정리하는데 4~5시간정도 걸린다.
+											홍대리의 하루일과의 반 이상이 데이터를 찾아 정리하는데 소요된다.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div><!--// item-->
+						<div class="item">
+							<div class="image">
+								<div class="story_contents_top">
+									<p class="story_bigTitle">매일 야근하는 홍대리</p>
+								</div>
+								<div class="story_contents_bottom">
+									<img class="story_img story_img_04" src="../images/story_png_04.png" alt="robot"/>
+									<div class="story_contents">
+										<p class="story_contents_text story_con">
+											데이터 추출 및 정리로 인해 중요한 원인분석 및 향후 대응안에 대한 고민은 하지못한 채 쌓여가는 보고서에 매일 야근하는 홍대리는 업무에 회의감을 느낀다.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div><!--// item-->
+						<div class="item">
+							<div class="image">
+								<div class="story_contents_top">
+									<p class="story_smallTitle"><span>S 반도체</span></p>
+									<p class="story_blueStyle">RPA 도입</p>
+								</div>
+								<div class="story_contents_bottom">
+									<img class="story_img story_img_05" src="../images/story_png_05.png" alt="robot"/>
+									<div class="story_contents">
+										<p class="story_contents_text story_con">
+											<span>“소프트 웨어 로봇이 인간의 업무를 대신 수행 하는것”</span><br>
+											RPA는 소프트웨어와 인공지능 기술 기반으로 업무 프로세스를 자동화하는 기술
+											RPA는 사람이 컴퓨터로 처리하는 ‘반복적’, ‘규칙적’, ‘대량의 작업’을
+											자동으로 처리하는 소프트웨어
+										</p>
+									</div>
+								</div>
+							</div>
+						</div><!--// item-->
+						<div class="item">
+							<div class="image">
+								<div class="story_contents_top">
+									<p class="story_smallTitle"><span>S 반도체 RPA 도입 후</span></p>
+									<p class="story_blueStyle">업무시간 단축 및 고객만족도 향상</p>
+								</div>
+								<div class="story_contents_bottom">
+									<img class="story_img story_img_06" src="../images/story_png_06.png" alt="robot"/>
+									<div class="story_contents">
+										<p class="story_contents_text story_con">
+											데이터 추출과 정리를 RPA에게 맡기고 홍대리는 RPA가 작성한 정리된 데이터 기반으로
+											원인 파악과 향후 대응안에 대한 업무를 진행하니 업무시간이 단축되고
+											제품의 불량률과 고객의 클레임 또한 상당수 줄어 들었다.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div><!--// item-->
+						<div class="item">
+							<div class="image">
+								<div class="story_contents_top">
+									<p class="story_smallTitle"><span>S 반도체 RPA 도입 후</span></p>
+									<p class="story_blueStyle">우수사원 홍대리</p>
+								</div>
+								<div class="story_contents_bottom">
+									<img class="story_img story_img_07" src="../images/story_png_07.png" alt="robot"/>
+									<div class="story_contents">
+										<p class="story_contents_text story_con">
+											홍대리는 RPA 도입 후 생산적인 개인 활동을 통해 좀 더 다양한 아이디어를 제안하여 우수사원으로 선정되었다.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div><!--// item-->
+						<div class="item">
+							<div class="image">
+								<div class="story_contents_top">
+									<p class="story_bigTitle bluefont">RPA 도입 관련해 궁금한 사항이 있으신가요?</p>
+									<div class="story_contact">
+										<!-- 230302 수정 -ys (주)에코아이티는 ‘AA Global Partner’ 로써 고객의 다양한 환경을 고려하여 맞춤 컨설팅 및 구축 서비스를 제공해 드리고 있습니다. -->
+										(주)에코아이티는 삼성 브리티 RPA 공식파트너로서 고객의 다양한 환경을 고려하여 맞춤 컨설팅 및 구축 서비스를 제공해 드리고 있습니다.
+										<p>문의 : rpa@echoit.co.kr </p>
+									</div>
+								</div>
+								<div class="story_contents_bottom">
+									<img class="story_img story_img_08" src="../images/story_png_08.png" alt="robot"/>
+									<div class="story_contents">
+										<div class="story_contents_text story_con">
+											<ul>
+												<li><img src="../images/story_png_09.png" alt="에코아이티"/></li>
+												<!-- 230302 수정 -ys <li><img src="../images/story_png_10.png" alt="Automation Anywhrer" style="height:52px"></li>230302 수정 -ys -->
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--// item-->
+					  </div> <!-- end slider -->
+					  <div class="slick_progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+						<span class="slider__label sr-only"></span>
+					  </div>
+				</div> 
+				<!-- end content -->
+			</div>
+		</div>
+		<!--// contentsArea_02-->
+		<!--contentsArea_05-->
+		<div id="contentsArea_05" class="contents contentsArea_05">
+			<div class="contentsArea05_in wh">
+				<h4 class="bigTitle wh">RPA<br><span>적용사례</span></h4>
+				<!--video_area-->
+				<div id="mdh-carousel" class="video_area container-fluid">
+					<div class="owl-carousel2 owl-theme" data-aos="fade-up">
+						<!-- 220728 ys 수정 -->
+						<div class="item mdh-item-overlay">
+							<div class="c-video-thumbnail">
+								<a href="https://www.youtube.com/watch?v=I9B38FiOnQE" target="_blank">
+									<div class="c-video-thumbnail__content">
+										<img src="../images/rpa_video_thumbnail_01.jpg" alt="브리티 RPA 남부발전 고객사례"/>
+									</div>
+									<div class="c-video-thumbnail__caption">브리티 RPA 남부발전 고객사례</div>
+								</a>
+							</div>
+						</div>
+						<div class="item mdh-item-overlay">
+							<div class="c-video-thumbnail">
+								<a href="https://www.youtube.com/watch?v=SmtWbm5zavw" target="_blank">
+									<div class="c-video-thumbnail__content">
+										<img src="../images/rpa_video_thumbnail_02.jpg" alt="브리티 RPA 한국철도 고객사례"/>
+									</div>
+									<div class="c-video-thumbnail__caption">브리티 RPA 한국철도 고객사례</div>
+								</a>
+							</div>
+						</div>
+						<div class="item mdh-item-overlay">
+							<div class="c-video-thumbnail">
+								<a href="https://www.youtube.com/watch?v=d0sxp-c4XTI" target="_blank">
+									<div class="c-video-thumbnail__content">
+										<img src="../images/rpa_video_thumbnail_03.jpg" alt="RPA 네이버 뉴스 크로울링"/>
+									</div>
+									<div class="c-video-thumbnail__caption">네이버 뉴스 크로울링</div>
+								</a>
+							</div>
+						</div>
+						<!-- //220728 ys 수정 -->
+						<!-- 220728 ys 수정 
+						<div class="item mdh-item-overlay">
+							<div class="c-video-thumbnail">
+								<a href="https://www.youtube.com/watch?v=d0sxp-c4XTI" target="_blank">
+									<div class="c-video-thumbnail__content">
+										<img src="https://img.youtube.com/vi/d0sxp-c4XTI/maxresdefault.jpg" alt="RPA 네이버 뉴스 크로울링"/>
+									</div>
+									<div class="c-video-thumbnail__caption">네이버 뉴스 크로울링</div>
+								</a>
+							</div>
+						</div>
+						<div class="item mdh-item-overlay">
+							<div class="c-video-thumbnail">
+								<a href="https://www.youtube.com/watch?v=ZnZPMChTPOw" target="_blank">
+									<div class="c-video-thumbnail__content">
+										<img src="https://img.youtube.com/vi/ZnZPMChTPOw/maxresdefault.jpg" alt="RPA 상품 가격 비교 자동화 프로세스"/>
+									</div>
+									<div class="c-video-thumbnail__caption">온라인몰 가격변경 자동화 프로세스</div>
+								</a>
+							</div>
+						</div>
+						<div class="item mdh-item-overlay">
+							<div class="c-video-thumbnail">
+								<a href="https://www.youtube.com/watch?v=xEdiOZGq9SA" target="_blank">
+									<div class="c-video-thumbnail__content">
+										<img src="https://img.youtube.com/vi/xEdiOZGq9SA/maxresdefault.jpg" alt="RPA 공장손익 계산"/>
+									</div>
+									<div class="c-video-thumbnail__caption">RPA 공장손익 계산</div>
+								</a>
+							</div>
+						</div>
+						<div class="item mdh-item-overlay">
+									<div class="c-video-thumbnail">
+								   <a href="https://www.youtube.com/watch?v=fJblWdjfAbM" target="_blank">
+									   <div class="c-video-thumbnail__content">
+										   <img src="https://img.youtube.com/vi/fJblWdjfAbM/maxresdefault.jpg" alt="RPA 상품 가격 비교 자동화 프로세스"/>
+									   </div>
+									   <div class="c-video-thumbnail__caption">상품 가격 비교 자동화 프로세스</div>
+								   </a>
+									</div>
+							</div>
+						<div class="item mdh-item-overlay">
+							<div class="c-video-thumbnail">
+								<a href="https://www.youtube.com/watch?v=AoV0mhpUAJg" target="_blank">
+									<div class="c-video-thumbnail__content">
+										<img src="https://img.youtube.com/vi/AoV0mhpUAJg/maxresdefault.jpg" alt="RPA 월별 세금계산서 취합"/>
+									</div>
+									<div class="c-video-thumbnail__caption">RPA 월별 세금계산서 취합</div>
+								</a>
+							</div>
+						</div>
+						<div class="item mdh-item-overlay">
+							<div class="c-video-thumbnail">
+							    <a href="https://www.youtube.com/watch?v=sECl-9S9YSI" target="_blank">
+								    <div class="c-video-thumbnail__content">
+									   <img src="https://img.youtube.com/vi/rW9fjWgN-Zk/maxresdefault.jpg" alt="RPA 7월 교육 수료 과제 결과"/>
+								    </div>
+								   <div class="c-video-thumbnail__caption">RPA 7월 교육 수료 과제 결과</div>
+								</a>
+							</div>
+						</div>
+						<div class="item mdh-item-overlay">
+							<div class="c-video-thumbnail">
+							    <a href="https://www.youtube.com/watch?v=sECl-9S9YSI" target="_blank">
+								    <div class="c-video-thumbnail__content">
+									   <img src="https://img.youtube.com/vi/yLAsNvsES3Y/maxresdefault.jpg" alt="상품 가격 변경 자동화 프로세스"/>
+								    </div>
+								    <div class="c-video-thumbnail__caption">상품 가격 변경 자동화 프로세스</div>
+							    </a>
+							</div>
+						</div>
+						<div class="item mdh-item-overlay">
+							<div class="c-video-thumbnail">
+								<a href="https://www.youtube.com/watch?v=sECl-9S9YSI" target="_blank">
+									<div class="c-video-thumbnail__content">
+										<img src="https://img.youtube.com/vi/sECl-9S9YSI/maxresdefault.jpg" alt="BAPI를 이용한 PO생성"/>
+									</div>
+									<div class="c-video-thumbnail__caption">BAPI를 이용한 PO생성</div>
+								</a>
+							</div>
+						</div>
+						<div class="item mdh-item-overlay">
+							 <div class="c-video-thumbnail">
+								<a href="https://www.youtube.com/watch?v=baxIe1PMeoE" target="_blank">
+									<div class="c-video-thumbnail__content">
+										<img src="https://img.youtube.com/vi/baxIe1PMeoE/maxresdefault.jpg" alt="서버 모니터링/점검"/>
+									</div>
+									<div class="c-video-thumbnail__caption">서버 모니터링/점검</div>
+								</a>
+							 </div>
+						</div>
+						<div class="item mdh-item-overlay">
+							<div class="c-video-thumbnail">
+								<a href="https://www.youtube.com/watch?v=gRoi-5h_RrI" target="_blank">
+									<div class="c-video-thumbnail__content">
+										<img src="http://img.youtube.com/vi/gRoi-5h_RrI/maxresdefault.jpg" alt="엑셀 피벗테이블 그래프 생성"/>
+									</div>
+									<div class="c-video-thumbnail__caption">엑셀 피벗테이블 그래프 생성</div>
+								</a>
+							 </div>
+						</div>
+						<div class="item mdh-item-overlay">
+							<div class="c-video-thumbnail">
+								<a href="https://www.youtube.com/watch?v=vzh6zS4nzOc" target="_blank">
+									<div class="c-video-thumbnail__content">
+										<img src="https://img.youtube.com/vi/vzh6zS4nzOc/maxresdefault.jpg"  alt="SAP 자재 마스터 등록"/>
+									</div>
+									<div class="c-video-thumbnail__caption">SAP 자재 마스터 등록</div>
+								</a>
+							 </div>
+						</div>
+						<div class="item mdh-item-overlay">
+							<div class="c-video-thumbnail">
+								<a href="https://www.youtube.com/watch?v=A_VgVvPdKYU" target="_blank">
+									<div class="c-video-thumbnail__content">
+										<img src="https://img.youtube.com/vi/A_VgVvPdKYU/maxresdefault.jpg"  alt="SAP 고객 마스터 생성"/>
+									</div>
+									<div class="c-video-thumbnail__caption">SAP 고객 마스터 생성</div>
+								</a>
+							 </div>
+						</div>
+						<div class="item mdh-item-overlay">
+							<div class="c-video-thumbnail">
+								<a href="https://www.youtube.com/watch?v=vfNXIu-FYys" target="_blank">
+									<div class="c-video-thumbnail__content">
+										<img src="https://img.youtube.com/vi/vfNXIu-FYys/maxresdefault.jpg"  alt="SAP 공급업체마스터 등록"/>
+									</div>
+									<div class="c-video-thumbnail__caption">SAP 공급업체 마스터 등록</div>
+								</a>
+							 </div>
+						</div> -->
+					</div>
+				</div>
+				<!--// video_area-->
+			</div>
+		</div>
+		<!--// contentsArea_05-->
+		<!--sub_footer-->
+		<div class="sub_footer">
+		</div>
+		<!--// sub_footer-->
+		<!--bottom_fixed-->
+		<div class="bottom_fixed">
+			<p class="fTab"><span><!--<i class="fa fa-phone" aria-hidden="true"></i>--><span onclick="gtag('event', 'click', {'event_category': 'RPA하단문의하기'}); tag_con('RPA_하단_문의하기');">문의하기</span></span></p>
+			<div class="goTop_wrap">
+				<p class="goTopBtn" id="back-to-top" title="Back to top"><span><i class="fa fa-chevron-up"></i></span></p>
+			</div>
+		</div>
+		<div class="bottom_fixed_dim"></div>
+		<!--// bottom_fixed-->
+	</div>
+	<!--// rpa_wrapper-->
+	<!--mailPop_box-->
+	<div id="mailPop_box" style="display: none;">
+	</div>
+	<!--//mailPop_box-->
+     
+    <!-- NAVER SCRIPT START -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "s_76dae02d260";
+if (!_nasa) var _nasa={};
+if (window.wcs ) {
+    wcs.inflow("echoit.co.kr");
+    wcs_do(_nasa);
+}
+</script>
+<!-- NAVER SCRIPT END -->
+        
+        
+	<!--owlCarousel-->
+	<script  src="../js/jquery213.min.js"></script>
+	<script  src="../js/owl.carousel.min.js"></script>
+    <script  src="../js/owlCarouselSlider.js"></script>
+    <script  src="../js/owlCarouselSlider2.js"></script>
+	<!--Slick-->
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/slick_base.js"></script>
+		<script  src="../js/slick_rpa.js"></script>
+	<script  src="../js/MobileMenu.js"></script>
+	<script language="javascript" type="text/javascript">
+		 // On init event-AOS
+		$('.news_slider').on('init', function(event, slick){
+		  console.log('.news_slider init');
+
+				AOS.init({
+					  throttleDelay: 100,
+					  duration: 700,
+					  once: true,
+					  anchorPlacement: 'top-bottom',
+				});
+		});
+	</script>
+	<script>
+		function mailPopopen(){ 
+			$('.inp_check').prop("checked",false);
+			$('select').find('option:first').attr('selected', 'selected');
+			$("#user_part").val("선택하기").prop("selected", true);
+			document.getElementById("user_name").value='';
+			document.getElementById("user_Department").value='';
+			document.getElementById("user_email").value='';
+			document.getElementById("user_phone").value='';
+			document.getElementById("user_area").value='';
+			document.getElementById("mailPop_box").style.display = "block";
+		}
+		function mailPopclose(){
+			document.getElementById("mailPop_box").style.display = "none" ;
+		}
+	</script>
+<script src="../js/page.js"></script>
+ </body>
+</html>
